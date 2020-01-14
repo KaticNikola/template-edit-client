@@ -1,0 +1,44 @@
+.templateEdit {
+  display: flex;
+  margin: 0;
+  padding: 0;
+
+  &-sideMenu {
+    height: 100vh;
+    width: 85px;
+    clear: both;
+    border: 1px solid red;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  &-sideMenu:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+  &-editMenu {
+    width: 400px;
+    z-index: 5;
+    clear: both;
+    border: 1px solid green;
+    position: fixed;
+    top: 0;
+    left: 85px;
+
+  }
+  &_EditMenu :after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  &-editModeContoroler {
+  }
+  &-templateWrapper {
+    // position: fixed;
+    // top: 0;
+    margin-left: 485px;
+    width:1453px;
+  }
+}

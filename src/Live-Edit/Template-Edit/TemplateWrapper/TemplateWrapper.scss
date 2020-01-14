@@ -1,0 +1,15 @@
+.templateWrapper{
+  width: 100%;
+  padding: 0px 25px 0px 25px;
+  background-image: url('./assets/templateWrapperBg.png');
+  // position: static !important;
+  &-icon{
+    height: 65px;
+    text-align: center;
+    
+  }
+  &-template{
+
+  }
+}
+

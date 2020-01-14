@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 46" width="50" height="46">
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #d8383c } 
+	</style>
+	<g id="Connect">
+		<g id="Text">
+			<path id="Color Fill 2 copy" class="shp0" d="M25.6 15.39C25.6 15.39 23.67 6.38 18.08 3.94C15.6 2.86 7.44 1.66 5.95 6.81C1.84 21.05 12.52 44.01 12.52 44.01L25.6 15.39ZM25.6 15.39C25.6 15.39 33.76 10.79 39.35 13.23C41.83 14.31 48.19 19.45 45.25 23.97C37.14 36.47 12.52 44.01 12.52 44.01L25.6 15.39Z" />
+		</g>
+	</g>
+</svg>

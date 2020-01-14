@@ -1,0 +1,104 @@
+#connect {
+  background-image: url("./assets/bg.svg");
+  background-size: cover;
+
+  height: 75vh;
+
+  .container {
+    width: 80%;
+    margin: 50px auto;
+    display: flex;
+
+    &-60 {
+      width: 60%;
+      border: 1px solid orangered;
+    }
+    &-info {
+      width: 40%;
+
+      &_titleBox {
+        text-align: right;
+
+        .title {
+          display: inline-block;
+          h2 {
+            font-size: 45px;
+            color: #d8383c;
+            font-family: "Pacifico", sans-serif;
+            font-weight: 400;
+            text-align: right;
+          }
+        }
+        .icon {
+          display: inline-block;
+        }
+      }
+      &_description {
+        p {
+          line-height: 2;
+          color: white;
+          font-family: "Roboto Slab", sans-serif;
+          font-weight: 400;
+          text-align: right;
+          
+        }
+      }
+
+      &_information {
+        .item{
+          justify-content: flex-end;
+          display: flex;
+          
+        }
+      }
+
+      &_socialMedia {
+      }
+    }
+  }
+
+  // .container h2{
+  //   font-size: 45px;
+  //   color: #d8383c;
+  //   font-family: "Pacifico", sans-serif;
+  //   font-weight: 400;
+  //   text-align: right;
+  // }
+
+  // .container p{
+  //   line-height: 2;
+  //   color: white;
+  //   font-family: "Roboto Slab", sans-serif;
+  //   font-weight: 400;
+  //   text-align: right;
+  // }
+
+  .overlay {
+    background-color: rgba(46, 46, 47, 0.7607843137254902);
+    height: 100%;
+  }
+
+  // .container{
+  //   padding-top: 10%;
+  // }
+
+  // .text-red{
+  //   color: #d8383c;
+  // }
+
+  .top-border {
+    background-image: url("assets/waveUp.svg");
+    background-position: bottom;
+    //background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 25px;
+    margin: 0;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .top-border {
+      height: 25px !important;
+    }
+  }
+}

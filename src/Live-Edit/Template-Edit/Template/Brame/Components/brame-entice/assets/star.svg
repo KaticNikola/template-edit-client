@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 45 48" width="45" height="48">
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #d8383c } 
+	</style>
+	<g id="Entice">
+		<g id="Text">
+			<path id="Shape 3 copy" class="shp0" d="M1 24L14.2 16.75L17.04 1.99L28.05 12.26L43 10.4L36.6 24L43 37.6L28.05 35.74L17.04 46L14.2 31.25L1 24" />
+		</g>
+	</g>
+</svg>
