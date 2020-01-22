@@ -7,29 +7,26 @@ const Context = React.createContext();
 
 export class Provider extends React.Component {
 	state = {
-		selectedElement: 'entice',//za form picker>edit menu
+		selectedElement: 'start',//za form picker>edit menu
 		editMode: 'on',
-		previewSize: '',
+		previewSize: 'PC',
+		campaingName: "Campaing Name",
+		campaingId:'',
+		imagePicker: 'on', //on / off *
 
+		//promena header > introduce * id svakog elementa je u stringu zamenio header sa introduce
+		introduce: {
+			introduceStatus: '',
+			id: "introduce",
 
-    //za editMenu 
-    editMenuContent:"",//moze da bude Formpicker | campani info - bice default | Section
-		enticeStatus: '',
-		informStatus: '',
-		connectStatus: '',
-		footerStatus: '',
-		campaingName:"Campaing Name",
-		
-		header: { 
-			id:"header",
-			navStatus: '',
+			navStatus: 'flex',
 			logo: {
-				id: 'headerLogo',
+				id: 'introduceLogo',
 				background: "url()",
 
 			},
 			navigationHome: {
-				id: 'headerNavigationHome',
+				id: 'introduceNavigationHome',
 				background: '',
 				border: '',
 				borderThickness: '',
@@ -79,7 +76,7 @@ export class Provider extends React.Component {
 
 			},
 			navigationEntice: {
-				id: 'headerNavigationEntice',
+				id: 'introduceNavigationEntice',
 				background: '',
 				border: '',
 				borderThickness: '',
@@ -129,7 +126,7 @@ export class Provider extends React.Component {
 
 			},
 			navigationEngage: {
-				id: 'headerNavigationEngage',
+				id: 'introduceNavigationEngage',
 				background: '',
 				border: '',
 				borderThickness: '',
@@ -180,9 +177,9 @@ export class Provider extends React.Component {
 			},
 
 			title: {
-				id: 'headerTitle',
+				id: 'introduceTitle',
 				content: "A Short Catchy Title",
-				fontSize: '55',
+				fontSize: '',
 				fontType: "",
 				fontWeight: "",
 				color: "",
@@ -205,7 +202,7 @@ export class Provider extends React.Component {
 
 			},
 			description: {
-				id: "headerDescription",
+				id: "introduceDescription",
 				content: "This primary subtitle is used to directly lead the audience to participate.",
 				fontSize: '',
 				fontType: "",
@@ -219,7 +216,7 @@ export class Provider extends React.Component {
 			},
 
 			button: {
-				id: 'headerButton',
+				id: 'introduceButton',
 				background: '',
 				border: '',
 				borderThickness: '',
@@ -269,8 +266,8 @@ export class Provider extends React.Component {
 
 			},
 			background: {
-				id: 'headerBackground',
-				background: "introduce-bg.svg",
+				id: 'introduceBackground',
+				background: "https://static.independent.co.uk/s3fs-public/thumbnails/image/2018/12/27/18/presents-under-tree.jpg?w968",//ne radi za img iz foldera
 				backgroundColor: '',
 				backgroundRepeat: 'no-repeat',
 				backgroundPosition: 'center',
@@ -280,15 +277,16 @@ export class Provider extends React.Component {
 		},
 
 		entice: {
-			id:"entice",
+			id: "entice",
+			enticeStatus: '', //izmena
 			icon: {
 				id: 'enticeTitleIcon',
 				icon: 'fas fa-star',// fontawesome class
-				fontSize: '30',
+				fontSize: '',
 				color: '#d8383c',
 				textAlign: '',
-
 			},
+
 			title: {
 				id: 'enticeTitle',
 				content: "Entice the audience",
@@ -342,16 +340,14 @@ export class Provider extends React.Component {
 				lineHeight: "",
 			},
 
-			//in progress
 			// component options user to pick
-			elementToShow:'cardList',
+			elementToShow: 'textSlideshow',
 			options: {
-				// promeni ime
-				cardList: [
+				textSlideshow: [
 					// img + title
 					{
 						title: {
-							id: 'enticeOptionPrize0Title',
+							id: 'enticeOptionT&S0Title', //izmena 
 							//actionType: 'EDIT_HEADER_TITILE',
 							content: "Win This Prize!",
 							fontSize: '',
@@ -366,19 +362,19 @@ export class Provider extends React.Component {
 
 						},
 						image: {
-							id: 'enticeOptionPrize0Image',
-							url: 'https://o.aolcdn.com/images/dims?quality=85&image_uri=https%3A%2F%2Fo.aolcdn.com%2Fimages%2Fdims%3Fcrop%3D1920%252C1080%252C0%252C0%26quality%3D85%26format%3Djpg%26resize%3D1600%252C900%26image_uri%3Dhttps%253A%252F%252Fs.yimg.com%252Fos%252Fcreatr-uploaded-images%252F2019-09%252Fa7ec8f80-e04e-11e9-bfaf-14f222042ebe%26client%3Da1acac3e1b3290917d92%26signature%3D953f11e05a621ef5141ef2508585859cbfee3eb5&client=amp-blogside-v2&signature=3ab20db4dc4b04dc6a07cebdfe9fa8497642394b',
+							id: 'enticeOptionT&S0Image',//izmena
+							url: '../../Template/Brame/Components/brame-entice/assets/prize1.svg',
 							//koje cemo porperies da menjamo vezane za img 
-							backgroundPosition: 'center', 
-							backgroundRepeat: 'no-reperat', 
+							backgroundPosition: 'center',
+							backgroundRepeat: 'no-reperat',
 							backgroundSize: "cover",
-							
+
 
 						}
 					},
 					{
 						title: {
-							id: 'enticeOptionPrize1Title',
+							id: 'enticeOptionT&S1Title',//izmena
 							//actionType: 'EDIT_HEADER_TITILE',
 							content: "Win This Prize!",
 							fontSize: '',
@@ -393,7 +389,7 @@ export class Provider extends React.Component {
 
 						},
 						image: {
-							id: 'enticeOptionPrize1Image',
+							id: 'enticeOptionT&S1Image',
 							url: "https://o.aolcdn.com/images/dims?quality=85&image_uri=https%3A%2F%2Fo.aolcdn.com%2Fimages%2Fdims%3Fcrop%3D1920%252C1080%252C0%252C0%26quality%3D85%26format%3Djpg%26resize%3D1600%252C900%26image_uri%3Dhttps%253A%252F%252Fs.yimg.com%252Fos%252Fcreatr-uploaded-images%252F2019-09%252Fa7ec8f80-e04e-11e9-bfaf-14f222042ebe%26client%3Da1acac3e1b3290917d92%26signature%3D953f11e05a621ef5141ef2508585859cbfee3eb5&client=amp-blogside-v2&signature=3ab20db4dc4b04dc6a07cebdfe9fa8497642394b",
 
 						},
@@ -401,7 +397,7 @@ export class Provider extends React.Component {
 					},
 					{
 						title: {
-							id: 'enticeOptionPrize2Title',
+							id: 'enticeOptionT&S2Title',//izmena
 							//actionType: 'EDIT_HEADER_TITILE',
 							content: "Win This Prize!",
 							fontSize: '',
@@ -416,8 +412,9 @@ export class Provider extends React.Component {
 
 						},
 						image: {
-							id: 'enticeOptionPrize2Image',
+							id: 'enticeOptionT&S2Image',//izmena
 							url: "https://o.aolcdn.com/images/dims?quality=85&image_uri=https%3A%2F%2Fo.aolcdn.com%2Fimages%2Fdims%3Fcrop%3D1920%252C1080%252C0%252C0%26quality%3D85%26format%3Djpg%26resize%3D1600%252C900%26image_uri%3Dhttps%253A%252F%252Fs.yimg.com%252Fos%252Fcreatr-uploaded-images%252F2019-09%252Fa7ec8f80-e04e-11e9-bfaf-14f222042ebe%26client%3Da1acac3e1b3290917d92%26signature%3D953f11e05a621ef5141ef2508585859cbfee3eb5&client=amp-blogside-v2&signature=3ab20db4dc4b04dc6a07cebdfe9fa8497642394b",
+							linkTo:''
 
 						},
 
@@ -449,7 +446,7 @@ export class Provider extends React.Component {
 		},
 
 		engage: {
-			id:"engage",
+			id: "engage",
 			icon: {
 				id: 'engageTitleIcon',
 				icon: 'fas fa-gift',// fontawesome class
@@ -512,7 +509,7 @@ export class Provider extends React.Component {
 			},
 			background: {
 				id: 'engageBackground',
-				background: "url()", 
+				background: "url()",
 				backgroundColor: '',
 				backgroundRepeat: '',
 				backgroundPosition: '',
@@ -523,7 +520,8 @@ export class Provider extends React.Component {
 		},
 
 		information: {
-			id:"information",
+			id: "information",
+			informStatus: '',
 			icon: {
 				id: 'informationTitleIcon',
 				icon: 'fas fa-bell',// fontawesome class
@@ -570,66 +568,21 @@ export class Provider extends React.Component {
 				textDecoration: "",
 				lineHeight: "",
 			},
+	
+			elementToShow: 'ImageBanner',
+			options: {
+				imageBanner: {
+					id: "enticeptionImg",
+					url: "https://o.aolcdn.com/images/dims?quality=85&image_uri=https%3A%2F%2Fo.aolcdn.com%2Fimages%2Fdims%3Fcrop%3D1920%252C1080%252C0%252C0%26quality%3D85%26format%3Djpg%26resize%3D1600%252C900%26image_uri%3Dhttps%253A%252F%252Fs.yimg.com%252Fos%252Fcreatr-uploaded-images%252F2019-09%252Fa7ec8f80-e04e-11e9-bfaf-14f222042ebe%26client%3Da1acac3e1b3290917d92%26signature%3D953f11e05a621ef5141ef2508585859cbfee3eb5&client=amp-blogside-v2&signature=3ab20db4dc4b04dc6a07cebdfe9fa8497642394b",
+					linkTo: 'https://www.youtube.com/watch?v=eGemlz7krlk',// link ka nekom sajtu
 
-			//in progress
-			//user selected element
-			elementToShow:'',
-			//cards
-			card1Title: {
-				id: "informationCard1Title"
-			},
-			card1Subtitle: {
-				id: "informationCard1Subtitle"
-			},
-			card1icon: {
-				id: "informationCard1Icon"
-			},
-			card1Descritpion: {
-				id: "informationCard1Description"
-			},
-			card1Image: {
-				id: "informationCard1Image"
-			},
-			//ovo se potencijalno menja 
-			//da li automatski vuce date
-			card1Date: {},
-			card1LikeIcon: {},
-			card1TalkIcon: {},
+				},
+				video: {
+					id: "enticeOptionVideo",
+					url: "",
 
-			//card2
-			card2Title: {
-				id: "informationCard2Title"
+				}
 			},
-			card2Subtitle: {
-				id: "informationCard2Subtitle"
-			},
-			card2icon: {
-				id: "informationCard2Icon"
-			},
-			card2Descritpion: {
-				id: "informationCard2Description"
-			},
-			card2Image: {
-				id: "informationCard2Image"
-			},
-
-			//card 3
-			card3Title: {
-				id: "informationCard3Title"
-			},
-			card3Subtitle: {
-				id: "informationCard3Subtitle"
-			},
-			card3icon: {
-				id: "informationCard3Icon"
-			},
-			card3Descritpion: {
-				id: "informationCard3Description"
-			},
-			card3Image: {
-				id: "informationCard3Image"
-			},
-/// in progress end 
 			background: {
 				id: 'informationBackground',
 				background: "url()",
@@ -643,7 +596,8 @@ export class Provider extends React.Component {
 		},
 
 		contact: {
-			id:"contact",
+			connectStatus: '',
+			id: "contact",
 			icon: {
 				id: 'contactTitleIcon',
 				icon: 'fas fa-heart',// fontawesome class
@@ -677,7 +631,6 @@ export class Provider extends React.Component {
 				//new advanced
 
 			},
-			//description
 			description: {
 				id: "contactDescription",
 				content: " Use this section to list any company contact information you would like to be available to the end users. Alternatively (or additionally), social media links could go here. ",
@@ -753,7 +706,7 @@ export class Provider extends React.Component {
 			],
 			background: {
 				id: 'contactBackground',
-				background: "url()", 
+				background: "url()",
 				backgroundColor: '',
 				backgroundRepeat: '',
 				backgroundPosition: '',

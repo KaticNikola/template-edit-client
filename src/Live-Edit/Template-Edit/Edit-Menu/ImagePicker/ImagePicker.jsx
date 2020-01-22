@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
 
-export class EditFormButton extends Component {
+export class ImagePicker extends Component {
   render() {
     return (
       <div>
-        EDIT FORM BUTTON
+        
       </div>
     )
   }
 }
 
-export default EditFormButton
+export default ImagePicker

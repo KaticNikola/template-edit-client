@@ -4,11 +4,16 @@ import { Consumer } from '../Template/Template-Context/TemplateContext';
 
 // IMPORTUJ FORME ZA EDIT ELEMENTATAN I NAPRAVI KOJE NEMAS
 
-import EditFormText from './Edit-Forms/EditFormText'
-import EditFormButton from './Edit-Forms/EditFormButton';
-import StartNavigation from './StartNavigation/StartNavigation'
-import SectionEntice from './Section-Entice/SectionEntice'
+import EditFormText from './EditForm-Text/EditFormText'
+import EditFormButton from './EditForm-Button/EditFormButton';
+import TextAndSlideshow from './Text&Slideshow/Text&Slideshow'
 
+import StartNavigation from './StartNavigation/StartNavigation'
+import SectionIntroduce from './Section-Introduce/SectionIntroduce'
+import SectionEntice from './Section-Entice/SectionEntice';
+import SectionEngage from './Section-Engage/SectionEngage';
+import SectionInform from './Section-Inform/SectionInform';
+import SectionConnect from './Section-Connect/SectionConnect';
 
 import './EditMenu.scss'
 export class EditMenu extends Component {
@@ -16,42 +21,43 @@ export class EditMenu extends Component {
     let elementToEdit = null;
     //let formTypeControler = null;
     let formTypeControler = "";//testiras txt formu
+    let editMode = this.props.editMode;
     return (
       <Consumer>
       {value => {
-        const { selectedElement, editMode } = value;
+        const { selectedElement } = value;
         // //logo nepostoji za sad
-        if (selectedElement === 'headerLogo') {
-          elementToEdit = value.header.logo;
+        if (selectedElement === 'introduceLogo') {
+          elementToEdit = value.introduce.logo;
           formTypeControler = 'icon'
         }
-        else if (selectedElement === 'headerNavigationHome') {
-          elementToEdit = value.header.navigationHome;
+        else if (selectedElement === 'introduceNavigationHome') {
+          elementToEdit = value.introduce.navigationHome;
           formTypeControler = 'button'
         }
-        else if (selectedElement === 'headerNavigationEntice') {
-          elementToEdit = value.header.navigationEntice;
+        else if (selectedElement === 'introduceNavigationEntice') {
+          elementToEdit = value.introduce.navigationEntice;
           formTypeControler = 'button'
         }
-        else if (selectedElement === 'headerNavigationEngage') {
-          elementToEdit = value.header.navigationEngage;
+        else if (selectedElement === 'introduceNavigationEngage') {
+          elementToEdit = value.introduce.navigationEngage;
           formTypeControler = 'button'
         }
-        if (selectedElement === 'headerTitle') {
-          elementToEdit = value.header.title;
+        if (selectedElement === 'introduceTitle') {
+          elementToEdit = value.introduce.title;
           formTypeControler = 'text'
         }
-        else if (selectedElement === 'headerDescription') {
-          elementToEdit = value.header.description;
+        else if (selectedElement === 'introduceDescription') {
+          elementToEdit = value.introduce.description;
           formTypeControler = 'text'
         }
-        else if (selectedElement === 'headerButton') {
-          elementToEdit = value.header.button;
+        else if (selectedElement === 'introduceButton') {
+          elementToEdit = value.introduce.button;
           formTypeControler = 'button'
         }
         // //bg
-        // else if (selectedElement === 'headerBackground') {
-        // 	elementToEdit = value.header.navigationHome;
+        // else if (selectedElement === 'introduceBackground') {
+        // 	elementToEdit = value.introduce.navigationHome;
         // 	formTypeControler = 'button'
         // }
 
@@ -75,8 +81,8 @@ export class EditMenu extends Component {
         }
 
         //PRIZE 1
-        else if (selectedElement === 'enticeOptionPrize0Title') {
-          elementToEdit = value.entice.options.cardList[0].title;
+        else if (selectedElement === 'enticeOptionT&S0Title') {
+          elementToEdit = value.entice.options.textSlideshow[0].title;
           formTypeControler = 'text'
         }
 
@@ -85,8 +91,8 @@ export class EditMenu extends Component {
         // 	formTypeControler = 'image'//mozda i section
         // }
         //PRIZE 2
-        else if (selectedElement === 'enticeOptionPrize1Title') {
-          elementToEdit = value.entice.options.cardList[1].title;
+        else if (selectedElement === 'enticeOptionT&S1Title') {
+          elementToEdit = value.entice.options.textSlideshow[1].title;
           formTypeControler = 'text'
         }
 
@@ -95,8 +101,8 @@ export class EditMenu extends Component {
         // 	formTypeControler = 'image'//mozda i section
         // }
         //PRIZE 3
-        else if (selectedElement === 'enticeOptionPrize2Title') {
-          elementToEdit = value.entice.options.cardList[2].title;
+        else if (selectedElement === 'enticeOptionT&S2Title') {
+          elementToEdit = value.entice.options.textSlideshow[2].title;
           formTypeControler = 'text'
         }
 
@@ -254,10 +260,22 @@ export class EditMenu extends Component {
 
       // za start cim loaduje TEM
       else if (selectedElement === 'start') {
-        formTypeControler = 'StartNavigation'
+        formTypeControler = 'start'
       }
-      else if (selectedElement === 'entice') {
-        formTypeControler = 'entice'
+      else if (selectedElement === 'sectionEntice') {
+        formTypeControler = 'sectionEntice'
+      }
+      else if (selectedElement === 'sectionIntroduce') {
+        formTypeControler = 'sectionIntroduce'
+      }
+      else if (selectedElement === 'sectionEngage') {
+        formTypeControler = 'sectionEngage'
+      }
+      else if (selectedElement === 'sectionInform') {
+        formTypeControler = 'sectionInform'
+      }
+      else if (selectedElement === 'sectionConnect') {
+        formTypeControler = 'sectionConnect'
       }
 
         //render froms
@@ -285,21 +303,49 @@ export class EditMenu extends Component {
             </div>
           )
         }
-        else if (editMode === 'on' && formTypeControler === 'StartNavigation') {
+        else if (editMode === 'on' && formTypeControler === 'start') {
           return (
             <div className="editMode">
               <StartNavigation />
             </div>
           )
         }
-        else if (editMode === 'on' && formTypeControler === 'entice') {
+        else if (editMode === 'on' && formTypeControler === 'sectionEntice') {
           return (
             <div className="editMode">
               <SectionEntice />
             </div>
           )
         }
- // edit forme za svaki section 
+        else if (editMode === 'on' && formTypeControler === 'sectionIntroduce') {
+          return (
+            <div className="editMode">
+              <SectionIntroduce />
+            </div>
+          )
+        }
+        else if (editMode === 'on' && formTypeControler === 'sectionEngage') {
+          return (
+            <div className="editMode">
+              <SectionEngage />
+            </div>
+          )
+        }
+        else if (editMode === 'on' && formTypeControler === 'sectionInform') {
+          return (
+            <div className="editMode">
+              <SectionInform />
+            </div>
+          )
+        }
+        else if (editMode === 'on' && formTypeControler === 'sectionConnect') {
+          return (
+            <div className="editMode">
+              <SectionConnect />
+            </div>
+          )
+        }
+        // edit forme za svaki section 
             //introduce
             //engage
             //info

@@ -16,11 +16,12 @@ class BrameEngage extends Component {
 		return (
 			<Consumer>
 				{value => {
+						const { previewSize } = value;
 					const { title, description1, description2, icon } = value.engage;
 					return (
-						<div id="engage">
+						<div id={`engage-${previewSize}`}>
 							{/* <div className="container-fluid"> */}
-							<div className="borderTop"></div>
+							<div className='borderTop'></div>
 							<div className="container">
 								<div className="container-titleBox">
 									<div className="container-titleBox_icon">

@@ -2,20 +2,23 @@
 
 
 import {
-	EDIT_HEADER_TITLE,
-	EDIT_HEADER_DESCRIPTION,
-	EDIT_HEADER_BUTTON,
-	EDIT_HEADER_BACKGROUND,
-	EDIT_HEADER_LOGO,
-	EDIT_HEADER_NAVIGATION_HOME,
-	EDIT_HEADER_NAVIGATION_ENTICE,
-	EDIT_HEADER_NAVIGATION_ENGAGE,
+	EDIT_INTRODUCE_TITLE,
+	EDIT_INTRODUCE_DESCRIPTION,
+	EDIT_INTRODUCE_BUTTON,
+	EDIT_INTRODUCE_BACKGROUND,
+	INTRODUCE_NAV_STATUS,
+	EDIT_INTRODUCE_LOGO,
+	EDIT_INTRODUCE_NAVIGATION_HOME,
+	EDIT_INTRODUCE_NAVIGATION_ENTICE,
+	EDIT_INTRODUCE_NAVIGATION_ENGAGE,
 
+	SECTION_ENTICE_STATUS,
 	EDIT_ENTICE_TITLE,
 	EDIT_ENTICE_ICON,
 	EDIT_ENTICE_DESCRIPTION_1,
 	EDIT_ENTICE_DESCRIPTION_2,
 	EDIT_ENTICE_BACKGROUND,
+	ENTICE_ELEMENT_TO_SHOW,
 	EDIT_ENTICE_PRICE_1_TITLE,
 	EDIT_ENTICE_PRICE_1_IMAGE,
 	EDIT_ENTICE_PRICE_2_TITLE,
@@ -29,10 +32,12 @@ import {
 	EDIT_ENGAGE_DESCRIPTION_2,
 	EDIT_ENGAGE_BACKGROUND,
 
+	SECTION_INFORMATION_STATUS,
 	EDIT_INFORMATION_TITLE,
 	EDIT_INFORMATION_ICON,
 	EDIT_INFORMATION_DESCRIPTION,
 	EDIT_INFORMATION_BACKGROUND,
+	INFORMATION_ELEMENT_TO_SHOW,
 
 	EDIT_CONTACT_TITLE,
 	EDIT_CONTACT_ICON,
@@ -46,26 +51,28 @@ import {
 
 	SELECTED_ELEMENT,
 	EDITMODE_CONTROLER,
-	PREVIEW_SIZE
+	PREVIEW_SIZE,
+	INTRODUCE_STATUS,
+	IMAGE_PICKER,
 
 } from './TemplateTypes';
 
 const reducer = (state, action) => {
 	switch (action.type) {
 		//********** HEADER  ***************/
-		case EDIT_HEADER_BACKGROUND:
+		case EDIT_INTRODUCE_BACKGROUND:
 			return {
-				...state.header.background,
-				backgroun: [state.header.background].map(key => {
+				...state.introduce.background,
+				backgroun: [state.introduce.background].map(key => {
 					console.log(` from context ${action.payload}`)
 					key[`${action.payload.property}`] = action.payload.value
 					// console.log(key[`${action.payload.property}`])
 				})
 			}
-		case EDIT_HEADER_TITLE:
+		case EDIT_INTRODUCE_TITLE:
 			return {
-				...state.header.title,
-				title: [state.header.title].map(key => {
+				...state.introduce.title,
+				title: [state.introduce.title].map(key => {
 					//console.log(` from context ${action.payload.property} + px`)
 					key[`${action.payload.property}`] = action.payload.value
 					// console.log(key[`${action.payload.property}`])
@@ -73,56 +80,62 @@ const reducer = (state, action) => {
 
 				})
 			}
-		case EDIT_HEADER_DESCRIPTION:
+		case EDIT_INTRODUCE_DESCRIPTION:
 			return {
-				...state.header.description,
-				description: [state.header.description].map(key => {
+				...state.introduce.description,
+				description: [state.introduce.description].map(key => {
 					console.log(action.payload)
 					key[`${action.payload.property}`] = action.payload.value
 					// console.log(key[`${action.payload.property}`])
 				})
 			}
-		case EDIT_HEADER_BUTTON:
+		case EDIT_INTRODUCE_BUTTON:
 			return {
-				...state.header.button,
-				button: [state.header.button].map(key => {
+				...state.introduce.button,
+				button: [state.introduce.button].map(key => {
 					console.log(action.payload)
 					key[`${action.payload.property}`] = action.payload.value
 					// console.log(key[`${action.payload.property}`])
 				})
 			}
 		//navigation
-		case EDIT_HEADER_LOGO:
+		case 	INTRODUCE_NAV_STATUS:
 			return {
-				...state.header.logo,
-				logo: [state.header.logo].map(key => {
+				...state.introduce.navStatus,
+				navStatus: state.introduce.navStatus = action.payload.id
+				// console.log(key[`${action.payload.property}`])
+			}
+		case EDIT_INTRODUCE_LOGO:
+			return {
+				...state.introduce.logo,
+				logo: [state.introduce.logo].map(key => {
 					console.log(action.payload)
 					key[`${action.payload.property}`] = action.payload.value
 					// console.log(key[`${action.payload.property}`])
 				})
 			}
-		case EDIT_HEADER_NAVIGATION_HOME:
+		case EDIT_INTRODUCE_NAVIGATION_HOME:
 			return {
-				...state.header.navigationHome,
-				navigationHome: [state.header.navigationHome].map(key => {
+				...state.introduce.navigationHome,
+				navigationHome: [state.introduce.navigationHome].map(key => {
 					console.log(action.payload)
 					key[`${action.payload.property}`] = action.payload.value
 					// console.log(key[`${action.payload.property}`])
 				})
 			}
-		case EDIT_HEADER_NAVIGATION_ENTICE:
+		case EDIT_INTRODUCE_NAVIGATION_ENTICE:
 			return {
-				...state.header.navigationEntice,
-				navigationEntice: [state.header.navigationEntice].map(key => {
+				...state.introduce.navigationEntice,
+				navigationEntice: [state.introduce.navigationEntice].map(key => {
 					console.log(action.payload)
 					key[`${action.payload.property}`] = action.payload.value
 					// console.log(key[`${action.payload.property}`])
 				})
 			}
-		case EDIT_HEADER_NAVIGATION_ENGAGE:
+		case EDIT_INTRODUCE_NAVIGATION_ENGAGE:
 			return {
-				...state.header.navigationEngage,
-				navigationEngage: [state.header.navigationEngage].map(key => {
+				...state.introduce.navigationEngage,
+				navigationEngage: [state.introduce.navigationEngage].map(key => {
 					console.log(action.payload)
 					key[`${action.payload.property}`] = action.payload.value
 					// console.log(key[`${action.payload.property}`])
@@ -130,6 +143,12 @@ const reducer = (state, action) => {
 			}
 		//********** ENTICE  ***************/
 
+		case SECTION_ENTICE_STATUS:
+			return {
+				...state.entice.enticeStatus,
+				enticeStatus: state.entice.enticeStatus = action.payload.id
+				// console.log(key[`${action.payload.property}`])
+			}
 		case EDIT_ENTICE_TITLE:
 			return {
 				...state.entice.title,
@@ -175,12 +194,19 @@ const reducer = (state, action) => {
 					// console.log(key[`${action.payload.property}`])
 				})
 			}
-		//dodaj prizes
+		//element to show
+
+		case ENTICE_ELEMENT_TO_SHOW:
+			return {
+				...state.entice.elementToShow,
+				elementToShow: state.entice.elementToShow = action.payload.id
+				// console.log(key[`${action.payload.property}`])
+			}
 		//P1
 		case EDIT_ENTICE_PRICE_1_TITLE:
 			return {
-				...state.entice.options.cardList[0].title,
-				title: [state.entice.options.cardList[0].title].map(key => {
+				...state.entice.options.textSlideshow[0].title,
+				title: [state.entice.options.textSlideshow[0].title].map(key => {
 					console.log(` from context ${action.payload}`)
 					key[`${action.payload.property}`] = action.payload.value
 					// console.log(key[`${action.payload.property}`])
@@ -188,8 +214,8 @@ const reducer = (state, action) => {
 			}
 		case EDIT_ENTICE_PRICE_1_IMAGE:
 			return {
-				...state.state.entice.options.cardList[0].title,
-				background: [state.entice.options.cardList[0].title].map(key => {
+				...state.state.entice.options.textSlideshow[0].title,
+				background: [state.entice.options.textSlideshow[0].title].map(key => {
 					console.log(` from context ${action.payload}`)
 					key[`${action.payload.property}`] = action.payload.value
 					// console.log(key[`${action.payload.property}`])
@@ -198,8 +224,8 @@ const reducer = (state, action) => {
 		//P2
 		case EDIT_ENTICE_PRICE_2_TITLE:
 			return {
-				...state.entice.options.cardList[1].title,
-				title: [state.entice.options.cardList[1].title].map(key => {
+				...state.entice.options.textSlideshow[1].title,
+				title: [state.entice.options.textSlideshow[1].title].map(key => {
 					console.log(` from context ${action.payload}`)
 					key[`${action.payload.property}`] = action.payload.value
 					// console.log(key[`${action.payload.property}`])
@@ -207,8 +233,8 @@ const reducer = (state, action) => {
 			}
 		case EDIT_ENTICE_PRICE_2_IMAGE:
 			return {
-				...state.state.entice.options.cardList[2].title,
-				background: [state.entice.options.cardList[2].title].map(key => {
+				...state.state.entice.options.textSlideshow[2].title,
+				background: [state.entice.options.textSlideshow[2].title].map(key => {
 					console.log(` from context ${action.payload}`)
 					key[`${action.payload.property}`] = action.payload.value
 					// console.log(key[`${action.payload.property}`])
@@ -217,8 +243,8 @@ const reducer = (state, action) => {
 		//P3
 		case EDIT_ENTICE_PRICE_3_TITLE:
 			return {
-				...state.entice.options.cardList[2].title,
-				title: [state.entice.options.cardList[2].title].map(key => {
+				...state.entice.options.textSlideshow[2].title,
+				title: [state.entice.options.textSlideshow[2].title].map(key => {
 					console.log(` from context ${action.payload}`)
 					key[`${action.payload.property}`] = action.payload.value
 					// console.log(key[`${action.payload.property}`])
@@ -226,8 +252,8 @@ const reducer = (state, action) => {
 			}
 		case EDIT_ENTICE_PRICE_3_IMAGE:
 			return {
-				...state.state.entice.options.cardList[2].title,
-				background: [state.entice.options.cardList[2].title].map(key => {
+				...state.state.entice.options.textSlideshow[2].title,
+				background: [state.entice.options.textSlideshow[2].title].map(key => {
 					console.log(` from context ${action.payload}`)
 					key[`${action.payload.property}`] = action.payload.value
 					// console.log(key[`${action.payload.property}`])
@@ -283,6 +309,12 @@ const reducer = (state, action) => {
 
 		//********** INFORMATION  ***************/
 
+		case SECTION_INFORMATION_STATUS:
+			return {
+				...state.information.informStatus,
+				informStatus: state.entice.informStatus = action.payload.id
+				// console.log(key[`${action.payload.property}`])
+			}
 		case EDIT_INFORMATION_TITLE:
 			return {
 				...state.information.title,
@@ -319,6 +351,12 @@ const reducer = (state, action) => {
 					key[`${action.payload.property}`] = action.payload.value
 					// console.log(key[`${action.payload.property}`])
 				})
+			}
+			case INFORMATION_ELEMENT_TO_SHOW:
+			return {
+				...state.information.elementToShow,
+				elementToShow: state.information.elementToShow = action.payload.id
+				// console.log(key[`${action.payload.property}`])
 			}
 
 		//********** CONTACT  ***************/
@@ -421,8 +459,18 @@ const reducer = (state, action) => {
 			return {
 				...state,
 				previewSize: state.previewSize = action.payload
-      }
-      // case za editMenu koji element da rederuje
+			}
+		case INTRODUCE_STATUS:
+			return {
+				...state,
+				introduceStatus: state.introduceStatus = action.payload
+			}
+			case IMAGE_PICKER:
+			return {
+				...state,
+				imagePicker: state.imagePicker = action.payload
+			}
+		// case za editMenu koji element da rederuje
 		default:
 			return state;
 	}

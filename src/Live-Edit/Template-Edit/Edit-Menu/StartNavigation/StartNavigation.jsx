@@ -22,7 +22,7 @@ export class StartNavigation extends Component {
                 </p>
                   </div>
                   <div className="navigation-item_arrow">
-                    <i class="fas fa-chevron-right"></i>
+                    <i className="fas fa-chevron-right"></i>
                   </div>
                 </div>
 
@@ -34,7 +34,7 @@ export class StartNavigation extends Component {
                 </p>
                   </div>
                   <div className="navigation-item_arrow">
-                    <i class="fas fa-chevron-right"></i>
+                    <i className="fas fa-chevron-right"></i>
                   </div>
                 </div>
 
@@ -46,7 +46,7 @@ export class StartNavigation extends Component {
                 </p>
                   </div>
                   <div className="navigation-item_arrow">
-                    <i class="fas fa-chevron-right"></i>
+                    <i className="fas fa-chevron-right"></i>
                   </div>
                 </div>
 
@@ -58,7 +58,7 @@ export class StartNavigation extends Component {
                 </p>
                   </div>
                   <div className="navigation-item_arrow">
-                    <i class="fas fa-chevron-right"></i>
+                    <i className="fas fa-chevron-right"></i>
                   </div>
                 </div>
 

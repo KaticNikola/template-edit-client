@@ -16,7 +16,7 @@ class BrameNav extends Component {
 		return (
 			<Consumer>
 				{value => {
-					const { logo, navigationHome, navigationEntice, navigationEngage,navStatus } = value.header;
+					const { logo, navigationHome, navigationEntice, navigationEngage,navStatus } = value.introduce;
 					return (
 						<div className="nav" style={{display: navStatus}}>
 							<div className="nav-logo">

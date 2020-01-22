@@ -1,39 +1,47 @@
 export const SELECTED_ELEMENT = 'SELECTED_ELEMENT';
 export const EDITMODE_CONTROLER = 'EDITMODE_CONTROLER';
 export const PREVIEW_SIZE = 'preview_size';
+export const INTRODUCE_STATUS = 'introduceStatus';
+export const IMAGE_PICKER = 'imagePicker';
 
 
-export const EDIT_HEADER_TITLE = 'headerTitle';
-export const EDIT_HEADER_DESCRIPTION = 'headerDescription';
-export const EDIT_HEADER_BUTTON = 'headerButton';
-export const EDIT_HEADER_BACKGROUND = 'headerBackground';
 
+export const EDIT_INTRODUCE_TITLE = 'introduceTitle';
+export const EDIT_INTRODUCE_DESCRIPTION = 'introduceDescription';
+export const EDIT_INTRODUCE_BUTTON = 'introduceButton';
+export const EDIT_INTRODUCE_BACKGROUND = 'introduceBackground';
+
+export const INTRODUCE_NAV_STATUS = 'introduceNavStatus';
 //navigation logo
-export const EDIT_HEADER_LOGO = 'headerLogo'
+export const EDIT_INTRODUCE_LOGO = 'introduceLogo'
 //navigation item  1
-export const EDIT_HEADER_NAVIGATION_HOME = 'headerNavigationHome'
+export const EDIT_INTRODUCE_NAVIGATION_HOME = 'introduceNavigationHome'
 //navigation item  2
-export const EDIT_HEADER_NAVIGATION_ENTICE = 'headerNavigationEntice'
+export const EDIT_INTRODUCE_NAVIGATION_ENTICE = 'introduceNavigationEntice'
 //navigation item  3
-export const EDIT_HEADER_NAVIGATION_ENGAGE = 'headerNavigationEngage'
+export const EDIT_INTRODUCE_NAVIGATION_ENGAGE = 'introduceNavigationEngage'
 
 
 
 // ***** ENTANCE *****
+export const SECTION_ENTICE_STATUS = 'enticeStatus';
 export const EDIT_ENTICE_TITLE = 'enticeTitle';
 export const EDIT_ENTICE_ICON = 'enticeTitleIcon';
 export const EDIT_ENTICE_DESCRIPTION_1 = 'enticeDescription1';
 export const EDIT_ENTICE_DESCRIPTION_2 = 'enticeDescription2';
-export const EDIT_ENTICE_BACKGROUND = 'headerBackground';
+export const EDIT_ENTICE_BACKGROUND = 'enticeBackground';
+//element to show
+export const ENTICE_ELEMENT_TO_SHOW = 'entanceelementToShow';
+
 //prize
-export const EDIT_ENTICE_PRICE_1_TITLE = 'enticeOptionPrize0Title';
-export const EDIT_ENTICE_PRICE_1_IMAGE = 'enticeOptionPrize0Image';
+export const EDIT_ENTICE_PRICE_1_TITLE = 'enticeOptionT&S0Title';
+export const EDIT_ENTICE_PRICE_1_IMAGE = 'enticeOptionT&S0Image';
 
-export const EDIT_ENTICE_PRICE_2_TITLE = 'enticeOptionPrize1Title';
-export const EDIT_ENTICE_PRICE_2_IMAGE = 'enticeOptionPrize1Image';
+export const EDIT_ENTICE_PRICE_2_TITLE = 'enticeOptionT&S1Title';
+export const EDIT_ENTICE_PRICE_2_IMAGE = 'enticeOptionT&S1Image';
 
-export const EDIT_ENTICE_PRICE_3_TITLE = 'enticeOptionPrize2Title';
-export const EDIT_ENTICE_PRICE_3_IMAGE = 'enticeOptionPrize2Image';
+export const EDIT_ENTICE_PRICE_3_TITLE = 'enticeOptionT&S2Title';
+export const EDIT_ENTICE_PRICE_3_IMAGE = 'enticeOptionT&S2Image';
 
 
 // ***** GAME *****
@@ -45,10 +53,13 @@ export const EDIT_ENGAGE_BACKGROUND = 'engageBackground';
 
 
 // ***** INFORMATION *****
+export const SECTION_INFORMATION_STATUS = 'informationStatus';
 export const EDIT_INFORMATION_TITLE = 'informationTitle';
 export const EDIT_INFORMATION_ICON = 'informationTitleIcon';
 export const EDIT_INFORMATION_DESCRIPTION = 'informationDescription';
 export const EDIT_INFORMATION_BACKGROUND = 'informationBackground';
+
+export const INFORMATION_ELEMENT_TO_SHOW = 'InfoelementToShow';
 export const EDIT_INFORMATION_CARD_1_TITLE = 'informationCard1Title';
 export const EDIT_INFORMATION_CARD_1_SUBTITLE = 'informationCard1Subtitle';
 export const EDIT_INFORMATION_CARD_1_ICON = 'informationCard1Icon';
