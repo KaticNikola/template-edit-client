@@ -11,14 +11,15 @@ export class Provider extends React.Component {
 		editMode: 'on',
 		previewSize: 'PC',
 		campaingName: "Campaing Name",
-		campaingId:'',
-		imagePicker: 'on', //on / off *
-
+		campaingId: '',//*
+		//dodato
+		modalStatus: '',
+		imageModalSource: "test",
+		iconModalSource: "",
 		//promena header > introduce * id svakog elementa je u stringu zamenio header sa introduce
 		introduce: {
 			introduceStatus: '',
 			id: "introduce",
-
 			navStatus: 'flex',
 			logo: {
 				id: 'introduceLogo',
@@ -290,7 +291,7 @@ export class Provider extends React.Component {
 			title: {
 				id: 'enticeTitle',
 				content: "Entice the audience",
-				fontSize: '',
+				fontSize: '40',
 				fontType: "",
 				fontWeight: "",
 				color: "",
@@ -299,18 +300,6 @@ export class Provider extends React.Component {
 				textAlign: "",
 				textDecoration: "",
 				lineHeight: "",
-
-				//mozda nece biti
-				// letterSpacing: '',
-				// marginTop: '',
-				// marginLeft: '',
-				// marginBottom: '',
-				// marginRight: '',
-				// paddingTop: '',
-				// paddingLeft: '',
-				// paddingBottom: '',
-				// paddingRight: '',
-				//new advanced
 
 			},
 			description1: {
@@ -363,7 +352,7 @@ export class Provider extends React.Component {
 						},
 						image: {
 							id: 'enticeOptionT&S0Image',//izmena
-							url: '../../Template/Brame/Components/brame-entice/assets/prize1.svg',
+							url: './assets/prize1.jpg',
 							//koje cemo porperies da menjamo vezane za img 
 							backgroundPosition: 'center',
 							backgroundRepeat: 'no-reperat',
@@ -414,7 +403,7 @@ export class Provider extends React.Component {
 						image: {
 							id: 'enticeOptionT&S2Image',//izmena
 							url: "https://o.aolcdn.com/images/dims?quality=85&image_uri=https%3A%2F%2Fo.aolcdn.com%2Fimages%2Fdims%3Fcrop%3D1920%252C1080%252C0%252C0%26quality%3D85%26format%3Djpg%26resize%3D1600%252C900%26image_uri%3Dhttps%253A%252F%252Fs.yimg.com%252Fos%252Fcreatr-uploaded-images%252F2019-09%252Fa7ec8f80-e04e-11e9-bfaf-14f222042ebe%26client%3Da1acac3e1b3290917d92%26signature%3D953f11e05a621ef5141ef2508585859cbfee3eb5&client=amp-blogside-v2&signature=3ab20db4dc4b04dc6a07cebdfe9fa8497642394b",
-							linkTo:''
+							linkTo: ''
 
 						},
 
@@ -424,6 +413,7 @@ export class Provider extends React.Component {
 				image: {
 					id: "enticeptionImg",
 					url: "https://o.aolcdn.com/images/dims?quality=85&image_uri=https%3A%2F%2Fo.aolcdn.com%2Fimages%2Fdims%3Fcrop%3D1920%252C1080%252C0%252C0%26quality%3D85%26format%3Djpg%26resize%3D1600%252C900%26image_uri%3Dhttps%253A%252F%252Fs.yimg.com%252Fos%252Fcreatr-uploaded-images%252F2019-09%252Fa7ec8f80-e04e-11e9-bfaf-14f222042ebe%26client%3Da1acac3e1b3290917d92%26signature%3D953f11e05a621ef5141ef2508585859cbfee3eb5&client=amp-blogside-v2&signature=3ab20db4dc4b04dc6a07cebdfe9fa8497642394b",
+					
 
 				},
 				video: {
@@ -568,13 +558,13 @@ export class Provider extends React.Component {
 				textDecoration: "",
 				lineHeight: "",
 			},
-	
-			elementToShow: 'ImageBanner',
+
+			elementToShow: 'imageBanner',
 			options: {
 				imageBanner: {
 					id: "enticeptionImg",
 					url: "https://o.aolcdn.com/images/dims?quality=85&image_uri=https%3A%2F%2Fo.aolcdn.com%2Fimages%2Fdims%3Fcrop%3D1920%252C1080%252C0%252C0%26quality%3D85%26format%3Djpg%26resize%3D1600%252C900%26image_uri%3Dhttps%253A%252F%252Fs.yimg.com%252Fos%252Fcreatr-uploaded-images%252F2019-09%252Fa7ec8f80-e04e-11e9-bfaf-14f222042ebe%26client%3Da1acac3e1b3290917d92%26signature%3D953f11e05a621ef5141ef2508585859cbfee3eb5&client=amp-blogside-v2&signature=3ab20db4dc4b04dc6a07cebdfe9fa8497642394b",
-					linkTo: 'https://www.youtube.com/watch?v=eGemlz7krlk',// link ka nekom sajtu
+					linkTo: '',// link ka nekom sajtu
 
 				},
 				video: {

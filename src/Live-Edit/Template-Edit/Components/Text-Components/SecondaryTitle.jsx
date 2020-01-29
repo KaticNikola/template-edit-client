@@ -25,7 +25,7 @@ const SecondaryTitle = ({
     paddingRight,
 }) => {
     const style = {
-        fontSize,
+        fontSize : `${fontSize}px`,
         fontType,
         fontWeight,
         color: color,

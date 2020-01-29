@@ -1,0 +1,81 @@
+.modal {
+  width: 70%;
+  height: 80vh;
+  margin: 100px auto;
+  border: none;
+  border-radius: 15px;
+
+  &-header {
+    height: 15%;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    background: #f5f5f5;
+
+    &_text {
+      .title {
+        font-size: 30px;
+        margin-bottom: 12px ;
+      }
+
+      .description {
+        margin-top: 10px;
+        font-size: 14px;
+        color: #aaaa;
+      }
+    }
+    &_selector {
+      margin-top: 10px;
+    }
+  }
+
+  &-body {
+    height: 72%;
+    background: #ebebeb;
+  }
+  &-footer {
+    height: 13%;
+    padding: 20px 40px;
+    background: #f5f5f5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &_delete {
+      background-image: linear-gradient(to right top, #cc3333, #cc4b2e, #cb5f2c, #c9702e, #c68034);
+      color: rgb(255, 255, 255);
+      & i {
+        padding-right: 15px;
+      }
+    }
+    &_cta {
+      .cancel {
+        color: #88c559;
+        background: transparent;
+
+        &:hover{
+          background: linear-gradient(to right top, rgb(220, 236, 73) 0%, rgba(203, 192, 71, 1) 100%);
+        color: rgb(255, 255, 255);
+
+        }
+      }
+      .select {
+        margin-left: 50px;
+        background: linear-gradient(to right top, rgba(88, 173, 100, 1) 0%, rgba(203, 192, 71, 1) 100%);
+        color: rgb(255, 255, 255);
+        & i {
+          padding-left: 15px;
+        }
+      }
+    }
+    .button {
+      width: 130px;
+      height: 50px;
+      font-size: 20px;
+      border: none;
+      outline: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  }
+}

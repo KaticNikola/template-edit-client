@@ -7,25 +7,26 @@ export class SectionEngage extends Component {
   render() {
     return (
       <div className='engage'>
+
         <div className="engage-content">
-          <div className="engage-content_title">
-            <h3>Engage</h3>
-          </div>
+          <h3 className="engage-content_title">
+         Engage
+          </h3>
           <div className="engage-content_section">
             <div className="wrapper">
-              <h3 className="engage-content_section_title">
+              {/* <h3 className="engage-content_section_title">
                 Enable this section
-                </h3>
+                </h3> */}
               <p className="engage-content_section_description">
-                This section is used to push the visitors who have still not started the game
+              Use this section to present the audience with the game you have created. 
               </p>
             </div>
-            <div className="engage-content_section_checkbox">
+            {/* <div className="engage-content_section_checkbox">
               <input type="checkbox" name="engage" value="Bike" />
-            </div>
+            </div> */}
           </div>
 
-          <div className="engage-content_layout">
+          {/* <div className="engage-content_layout">
             <SelectField
               label='Content layout'
               options={[
@@ -45,12 +46,13 @@ export class SectionEngage extends Component {
 
           <p className="engage-content_layout">
           Click on the layout elements to edit their content. We’ll save your changes as soon as you make them.
-          </p>
+          </p> */}
 
         </div>
+        
         {/* select element koji ima option vlaue [sa elementima koje mozes da pokazes u sectionu ] > u menja value u state koja odredjuje u conditional component sta ce da se renderuje */}
 
-        <div className="engage-finish">
+        {/* <div className="engage-finish">
           <div className="engage-finish_text">
             <h3 className="title">Happy with what you see?</h3>
             <p className="description">
@@ -61,7 +63,10 @@ export class SectionEngage extends Component {
             <a href="#">Finish</a>
           </div>
         </div>
+         */}
       </div>
+
+
     
     )
   }

@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 import './InputField.scss'
 export class InputField extends Component {
   render() {
-    const { type, name, placeholder, onChange, value, label, className, min, max, step, append } = this.props;
+    const { type, name, placeholder, onChange, value, label, min, max, step, append } = this.props;
     return (
       <div className='inputField'>
         <label style={!label ? { display: "none" } : { display: "block" }} htmlFor={name}>{label}</label>

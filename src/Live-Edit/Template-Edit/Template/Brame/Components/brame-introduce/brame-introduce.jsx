@@ -42,7 +42,7 @@ class BrameIntroduce extends Component {
 
 							<div className="container">
 								<div className="boxLeft">
-									<div className="boxLeft-title">
+									<div className="boxLeft-title hover">
 										{/* <MainTitle	 {...title} id={} /> */}
 										<MainTitle {...title} />
 									</div>

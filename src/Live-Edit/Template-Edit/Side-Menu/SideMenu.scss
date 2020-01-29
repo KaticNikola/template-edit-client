@@ -13,16 +13,21 @@
       width: 50px;
       height: 50px;
     }
+    span{
+      width: 50px;
+      height: 50px;
+      background:#66af60;
+    }
     
   }
 
   &-tabs{
-    
     cursor: pointer;
 
     &_tab{
       height: 80px;
       color: #66af60;
+      padding-top: 25px;
       
       img {
         width: 50px;

@@ -32,10 +32,10 @@ export class SectionInform extends Component {
     console.log(`id${id}`)
     dispatch({
       type: INFORMATION_ELEMENT_TO_SHOW,
-      payload: {
+      payload:
         id
         // selectionKey
-      }
+      
     })
   }
 
@@ -71,19 +71,19 @@ export class SectionInform extends Component {
                   <SelectField
                     label='Content layout'
                     options={[
-                      { value: "text&Slideshow", label: `Text & Slideshow` },
-                      { value: "SingleImage", label: 'Single Image' },
+                      { value: "imageBanner", label: `Image Baner` },
+                      { value: "None", label: `none` },
                     ]} />
                 </div>
 
-                <div className="inform-content_layout">
+                {/* <div className="inform-content_layout">
                   <SelectField
                     label='Slide count'
                     options={[
-                      { value: "text&Slideshow", label: `Text & Slideshow` },
+                      { value: "imageBanner", label: `Image Baner` },
                       { value: "SingleImage", label: 'Single Image' },
                     ]} />
-                </div>
+                </div> */}
 
                 <p className="inform-content_layout">
                   Click on the layout elements to edit their content. We’ll save your changes as soon as you make them.
@@ -92,7 +92,7 @@ export class SectionInform extends Component {
               </div>
               {/* select element koji ima option vlaue [sa elementima koje mozes da pokazes u sectionu ] > u menja value u state koja odredjuje u conditional component sta ce da se renderuje */}
 
-              <div className="inform-finish">
+              {/* <div className="inform-finish">
                 <div className="inform-finish_text">
                   <h3 className="title">Happy with what you see?</h3>
                   <p className="description">
@@ -102,7 +102,8 @@ export class SectionInform extends Component {
                 <div className="inform-finish_cta">
                   <a href="#">Finish</a>
                 </div>
-              </div>
+              </div> */}
+
             </div>
 
           )

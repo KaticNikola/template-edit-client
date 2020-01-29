@@ -5,6 +5,31 @@ $break-medium: 1000px;
 $break-large: 1200px;
 $break-large1: 1300px;
 
+//fonts
+$main-title-PC: 52px;
+$main-title-Tablet: 55px;
+$main-title-phone: 40px;
+
+$main-subtitle-PC: 24px;
+$main-subtitle-Tablet: 24px;
+$main-subtitle-phone: 18px;
+
+$Section-title-PC: 48px;
+$Section-title-Tablet: 48px;
+$Section-title-phone: 48px;
+
+$paragraph-PC:18px;
+$paragraph-tablet:18px;
+$paragraph-Phone:18px;
+
+$button-txt-Pc: 24px;
+$button-txt-tablet: 25px;
+$button-txt-Phone: 20px;
+
+
+
+
+
 #introduce-PC {
   background: url("./assets/introduce-bg.svg");
   background-size: cover;
@@ -35,14 +60,14 @@ $break-large1: 1300px;
         text-align: center;
         margin-bottom: 10px;
         h1 {
-          font-size: 55px;
+          font-size: $main-title-PC;
           @media screen and (max-width: $break-large1) {
             font-size: 40px;
           }
         }
       }
       &-description {
-        font-size: 20px;
+        font-size: $main-subtitle-PC;
         line-height: 20px;
         color: #3c3c3c;
         font-family: "Roboto Slab", sans-serif;
@@ -63,7 +88,7 @@ $break-large1: 1300px;
           padding: 10px 40px;
           border-radius: 25px;
           font-weight: 600;
-          font-size: 25px;
+          font-size: $button-txt-Pc;
           font-family: "Roboto Slab", serif;
           border: none;
           outline: none;
@@ -134,14 +159,14 @@ $break-large1: 1300px;
         text-align: center;
         margin-bottom: 10px;
         h1 {
-          font-size: 55px;
+          font-size: $main-title-Tablet;
           @media screen and (max-width: $break-large1) {
             font-size: 40px;
           }
         }
       }
       &-description {
-        font-size: 20px;
+        font-size: $main-subtitle-Tablet;
         line-height: 20px;
         color: #3c3c3c;
         font-family: "Roboto Slab", sans-serif;
@@ -162,7 +187,7 @@ $break-large1: 1300px;
           padding: 10px 40px;
           border-radius: 25px;
           font-weight: 600;
-          font-size: 25px;
+          font-size: $button-txt-tablet;
           font-family: "Roboto Slab", serif;
           border: none;
           outline: none;
@@ -232,14 +257,14 @@ $break-large1: 1300px;
         text-align: center;
         margin-bottom: 10px;
         h1 {
-          font-size: 40px;
+          font-size: $main-title-phone;
           @media screen and (max-width: $break-large1) {
             font-size: 40px;
           }
         }
       }
       &-description {
-        font-size: 18px;
+        font-size: $main-subtitle-phone;
         line-height: 20px;
         color: #3c3c3c;
         font-family: "Roboto Slab", sans-serif;
@@ -260,7 +285,7 @@ $break-large1: 1300px;
           padding: 10px 30px;
           border-radius: 25px;
           font-weight: 600;
-          font-size: 20px;
+          font-size: $button-txt-Phone;
           font-family: "Roboto Slab", serif;
           border: none;
           outline: none;

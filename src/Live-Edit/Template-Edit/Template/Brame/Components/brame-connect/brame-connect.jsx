@@ -15,6 +15,8 @@ import Description from '../../../../Components/Text-Components/Description'
 import Icon from '../../../../Components/FontAwesome-Icon-Component/Icon'
 
 class BrameConnect extends Component {
+
+
 	static defaultProps = {
 		center: {
 			lat: 59.95,
@@ -26,10 +28,11 @@ class BrameConnect extends Component {
 		return (
 			<Consumer>
 				{value => {
-					const { title, description, icon, location, phone, email } = value.contact;
+					const { previewSize } = value;
+					const { connectStatus, title, description, icon, location, phone, email } = value.contact;
 
 					return (
-						<div id="connect">
+						<div id={`connect-${previewSize}`} style={{display:connectStatus}}>
 							<div className="overlay">
 								<div className="top-border"></div>
 								<div className="container">
@@ -55,15 +58,15 @@ class BrameConnect extends Component {
 										<div className="container-info_information">
 											<div className="item">
 												<Description {...location}/>
-												<img src={house} alt="location" />
+												<i class="fas fa-home"></i>
 											</div>
 											<div className="item">
 												<Description {...phone}/>
-												<img src={phone} alt="phone" />
+												<i class="fas fa-mobile-alt"></i>
 											</div>
 											<div className="item">
 												<Description {...email}/>
-												<img src={et} alt="email" />
+												<i class="fas fa-at"></i>
 											</div>
 
 										</div>

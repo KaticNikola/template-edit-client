@@ -11,7 +11,8 @@ export class InfoConditionalComponent extends Component {
 			<Consumer>
 				{value =>{
 					const {elementToShow, options } = value.information;
-					if (elementToShow === 'ImageBanner') {
+
+					if (elementToShow === 'imageBanner') {
 						return (
 							<div className="ImageBanner">
 							<ImageBanner ImageBanner={options.imageBanner}/>
@@ -30,6 +31,7 @@ export class InfoConditionalComponent extends Component {
 							</div>
 						)
 					}
+				
 				
 				}}
 			</Consumer>

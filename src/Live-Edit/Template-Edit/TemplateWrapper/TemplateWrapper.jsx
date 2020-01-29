@@ -10,7 +10,7 @@ export class TemplateWrapper extends Component {
       <div className='templateWrapper'>
 
         <div className="templateWrapper-icon">
-          <span><img src="../Side-Menu/assets/BRAME-logo.png" height='35px' width='35px' alt=""/></span>RAME
+          <img src="./assets/BRAME logo.jpg" alt="logo"/>
         </div>
         <div className="templateWrapper-template">
           <Brame />

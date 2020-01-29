@@ -15,7 +15,7 @@ export class TextSlideshow extends Component {
 								<Card
 									card={card}
 									idIndex={index}
-								/>
+								/>								
 							</>
 						)
 					})

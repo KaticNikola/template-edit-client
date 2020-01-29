@@ -63,7 +63,7 @@ export class SectionEntice extends Component {
                   </div>
                   <div className="entice-content_section_checkbox"
                     onClick={this.handleShowHideSection.bind(this, dispatch)}>
-                    <input type="checkbox" name="entice" value="Bike" />
+                    <input type="checkbox" name="entice" value="" />
                   </div>
                 </div>
 
@@ -73,18 +73,18 @@ export class SectionEntice extends Component {
                     label='Content layout'
                     options={[
                       { value: "text&Slideshow", label: `Text & Slideshow` },
-                      { value: "SingleImage", label: 'Single Image' },
+                      { value: "singleImage", label: 'Single Image' },
                     ]} />
                 </div>
 
-                <div className="entice-content_layout">
+                {/* <div className="entice-content_layout">
                   <SelectField
                     label='Slide count'
                     options={[
                       { value: "text&Slideshow", label: `Text & Slideshow` },
                       { value: "SingleImage", label: 'Single Image' },
                     ]} />
-                </div>
+                </div> */}
 
                 <p className="entice-content_layout">
                   Click on the layout elements to edit their content. We’ll save your changes as soon as you make them.
@@ -93,7 +93,7 @@ export class SectionEntice extends Component {
               </div>
               {/* select element koji ima option vlaue [sa elementima koje mozes da pokazes u sectionu ] > u menja value u state koja odredjuje u conditional component sta ce da se renderuje */}
 
-              <div className="entice-finish">
+              {/* <div className="entice-finish">
                 <div className="entice-finish_text">
                   <h3 className="title">Happy with what you see?</h3>
                   <p className="description">
@@ -103,7 +103,8 @@ export class SectionEntice extends Component {
                 <div className="entice-finish_cta">
                   <a href="#">Finish</a>
                 </div>
-              </div>
+              </div> */}
+
             </div>
           )
         }}

@@ -61,7 +61,7 @@ export class StartNavigation extends Component {
                     <i className="fas fa-chevron-right"></i>
                   </div>
                 </div>
-
+{/* 
                 <div className="navigation-finish">
                   <div className="navigation-finish_text">
                     <h3 className="title">Happy with what you see?</h3>
@@ -72,7 +72,8 @@ export class StartNavigation extends Component {
                   <div className="navigation-finish_cta">
                     <a href="#">Finish</a>
                   </div>
-                </div>
+                </div> */}
+
               </div>
           )
         }}
