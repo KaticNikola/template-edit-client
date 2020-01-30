@@ -71,10 +71,10 @@ export class SectionIntroduce extends Component {
                 
                 <div className="introduce-content_section"
                   onClick={this.handeOpenModal.bind(this, dispatch)}
-                  id='on'>
+                  tag='on'>
                     {/* <img src={background} alt=""/> */}
                   <ChangeImage
-                    id='on'
+                    tag='on'
                     label='Change Background'
                     background={background}/>
                 </div>

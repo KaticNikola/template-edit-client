@@ -2,7 +2,7 @@
 import React from 'react'
 
 const SecondaryTitle = ({
-    id,
+    tag,
     actionType,
     content,
     fontSize,
@@ -46,7 +46,7 @@ const SecondaryTitle = ({
 
     }
     return (
-        <h2 id={id} name={actionType} style={style}>{content}</h2>
+        <h2 id={tag} name={actionType} style={style}>{content}</h2>
     )
 }
 

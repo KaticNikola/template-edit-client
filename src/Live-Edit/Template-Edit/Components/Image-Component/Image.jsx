@@ -5,14 +5,14 @@ const Image = ({
     url,
     height,
     width,
-    id,
+    tag,
 }) => {
     const style = {
       height: `${height}px`,
       width: `${width}px`,
     }
     return (
-        <img src={url} style={style} id={id} alt=""/>
+        <img src={url} style={style} id={tag} alt=""/>
     )
 }
 

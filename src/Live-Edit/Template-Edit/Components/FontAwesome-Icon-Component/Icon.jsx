@@ -6,7 +6,7 @@ const Icon = ({
     fontSize,
     color,
     textAlign,
-    id,
+    tag,
 }) => {
     const style = {
         fontSize: `${fontSize}px`,
@@ -14,7 +14,7 @@ const Icon = ({
         textAlign,
     }
     return (
-        <i style={style} className={icon} id={id} />
+        <i style={style} className={icon} id={tag} />
     )
 }
 

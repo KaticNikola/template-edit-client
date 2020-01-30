@@ -8,7 +8,7 @@ export class ImageBanner extends Component {
     return (
       <div className='imageBanner'> 
         <a href={ImageBanner.linkTo} target="_blank" >
-          <img  id={ImageBanner.id} src={ImageBanner.url} width='100%' height='100%' alt=""/>
+          <img  id={ImageBanner.tag} src={ImageBanner.url} width='100%' height='100%' alt=""/>
         </a>
       </div>
     )

@@ -9,22 +9,23 @@ export class SingleImage extends Component {
 
   handleSelectImage = (dispatch, e) => {
     let id = e.target.id;
-    console.log(id)
+    let url= e.target.src;
+    console.log(`single img album ${url}`)
     dispatch({
       type: SELECT_IMAGE,
-      payload: id
+      payload: url
     })
 
   }
   render() {
-    const { imageID, url, title } = this.props.image
+    const { imagetag, url, title } = this.props.image
     return (
       <Consumer>
         {value => {
           const { dispatch } = value
           return (
             <div className='imageCard' onClick={this.handleSelectImage.bind(this, dispatch)}>
-              <img className="imageCard-image" src={url} alt="" id={imageID} />
+              <img className="imageCard-image" src={url} alt="" id={imagetag} />
               <p className="imageCard-title">{title}</p>
             </div>
           )

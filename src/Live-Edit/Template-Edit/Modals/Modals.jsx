@@ -11,7 +11,7 @@ export class Modals extends Component {
     return (
       <Consumer>
         {value => {
-          const { selectedElement, modalStatus } = value;
+          const { selectedElement, selectedImagetag } = value;
     
           if (selectedElement === 'introduce') {
             elementToEdit = value.introduce.background;
@@ -28,7 +28,7 @@ export class Modals extends Component {
           if(formTypeControler === 'image'){
             return(
               <>
-                <ImageModal elementToEdit={elementToEdit}/>
+                <ImageModal elementToEdit={elementToEdit} selectedImagetag={selectedImagetag}/>
               </>
             )
           }
