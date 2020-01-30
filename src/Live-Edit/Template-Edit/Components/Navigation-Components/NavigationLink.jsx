@@ -5,7 +5,7 @@ import React from 'react'
 const NavigationLink = ({ 
     actionType,
     path,
-    id,
+    tag,
     //bg styles
     background,
     border,
@@ -91,7 +91,7 @@ const NavigationLink = ({
     }
 
     return (
-        <a href="#" id={id} name={actionType} style={style} >{content}</a>
+        <a href="#" id={tag} name={actionType} style={style} >{content}</a>
         )
 }
 

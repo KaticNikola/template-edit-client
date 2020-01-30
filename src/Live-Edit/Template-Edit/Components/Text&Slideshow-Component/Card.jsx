@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import CardTitle from './CardTitle.jsx';
-import prize from '../../Template/Brame/Components/brame-entice/assets/prize1.svg'
+import prize1 from '../../Template/Brame/Components/brame-entice/assets/prize1.svg'
+import prize2 from '../../Template/Brame/Components/brame-entice/assets/prize2.svg'
+import prize3 from '../../Template/Brame/Components/brame-entice/assets/prize3.svg'
 
 export class Card extends Component {
   render() {

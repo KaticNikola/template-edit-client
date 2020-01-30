@@ -2,8 +2,13 @@ export const SELECTED_ELEMENT = 'SELECTED_ELEMENT';
 export const EDITMODE_CONTROLER = 'EDITMODE_CONTROLER';
 export const PREVIEW_SIZE = 'preview_size';
 export const INTRODUCE_STATUS = 'introduceStatus';
-export const IMAGE_PICKER = 'imagePicker';
-
+export const UPLOAD_IMAGE = ' uploadImage';
+export const SELECT_IMAGE = ' selectImage';
+export const REMOVE_IMAGE = ' removeImage';
+//modal contorler
+export const MODAL_STATUS = 'modalStatus';
+export const MODAL_IMAGE_SOURCE = 'modalImageSource';
+export const MODAL_ICON_SOURCE = 'modalIconSource';
 
 
 export const EDIT_INTRODUCE_TITLE = 'introduceTitle';
@@ -69,12 +74,16 @@ export const EDIT_INFORMATION_CARD_1_IMAGE = 'informationCard1Image ';
 
 
 // ***** CONTACT *****
+export const SECTION_CONTACT_STATUS = 'enticeContact';
 export const EDIT_CONTACT_TITLE = 'contactTitle';
 export const EDIT_CONTACT_ICON = 'contactTitleIcon';
 export const EDIT_CONTACT_DESCRIPTION = 'contactDescription';
 export const EDIT_CONTACT_LOCATION = 'contactLocation';
 export const EDIT_CONTACT_PHONE = 'contactPhone';
 export const EDIT_CONTACT_EMAIL = 'contactEmail';
+
+// google map 
+//company info
 
 export const EDIT_CONTACT_SOCIAL_MEDIA = 'contactDescription';
 export const EDIT_CONTACT_BACKGROUND = 'contactBackground';

@@ -39,6 +39,7 @@ import {
 	EDIT_INFORMATION_BACKGROUND,
 	INFORMATION_ELEMENT_TO_SHOW,
 
+	SECTION_CONTACT_STATUS,
 	EDIT_CONTACT_TITLE,
 	EDIT_CONTACT_ICON,
 	EDIT_CONTACT_DESCRIPTION,
@@ -53,7 +54,12 @@ import {
 	EDITMODE_CONTROLER,
 	PREVIEW_SIZE,
 	INTRODUCE_STATUS,
-	IMAGE_PICKER,
+	MODAL_STATUS,
+	MODAL_IMAGE_SOURCE,
+	MODAL_ICON_SOURCE,
+	UPLOAD_IMAGE,
+	SELECT_IMAGE,
+	REMOVE_IMAGE,
 
 } from './TemplateTypes';
 
@@ -312,7 +318,7 @@ const reducer = (state, action) => {
 		case SECTION_INFORMATION_STATUS:
 			return {
 				...state.information.informStatus,
-				informStatus: state.entice.informStatus = action.payload.id
+				informStatus: state.information.informStatus = action.payload.id
 				// console.log(key[`${action.payload.property}`])
 			}
 		case EDIT_INFORMATION_TITLE:
@@ -355,7 +361,7 @@ const reducer = (state, action) => {
 			case INFORMATION_ELEMENT_TO_SHOW:
 			return {
 				...state.information.elementToShow,
-				elementToShow: state.information.elementToShow = action.payload.id
+				elementToShow: state.information.elementToShow = action.payload
 				// console.log(key[`${action.payload.property}`])
 			}
 
@@ -465,12 +471,48 @@ const reducer = (state, action) => {
 				...state,
 				introduceStatus: state.introduceStatus = action.payload
 			}
-			case IMAGE_PICKER:
+			case SECTION_CONTACT_STATUS:
+				return {
+					...state,
+					contactStatus: state.contact.connectStatus = action.payload
+				}
+
+
+
+			//modal reduces
+			case MODAL_STATUS:
 			return {
 				...state,
-				imagePicker: state.imagePicker = action.payload
+				modalStatus: state.modalStatus = action.payload
+			}
+			case MODAL_IMAGE_SOURCE:
+			return {
+				...state,
+				modalImageSource: state.imageModalSource = action.payload
+			}
+			case MODAL_ICON_SOURCE:
+			return {
+				...state,
+				iconModalSource: state.iconModalSource = action.payload
 			}
 		// case za editMenu koji element da rederuje
+
+		//upload imge
+		case UPLOAD_IMAGE:
+			return {
+				...state,
+				album: state.album.push(action.payload) 
+			}
+			case SELECT_IMAGE:
+			return {
+				...state,
+				selectedImagetag: state.selectedImagerag = action.payload
+			}
+			// case REMOVE_IMAGE:
+			// return {
+			// 	...state,
+			// 	album: state.album.
+			// }
 		default:
 			return state;
 	}

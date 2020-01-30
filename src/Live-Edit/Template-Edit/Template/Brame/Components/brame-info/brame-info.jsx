@@ -24,29 +24,29 @@ import InfoConditionalComponent from '../../../../Components/Info-Conditional-Co
 
 class BrameInfo extends Component {
 	render() {
-		const {status } = this.props
 		return (
 			<Consumer>
 				{value => {
-					const { title, description, icon, elementToShow } = value.information;
+					const { previewSize } = value
+					const { informStatus, title, description, icon, elementToShow } = value.information;
 					return (
-						<div id="info" style={{display:status}}>
-							<div className="container60">
-								<div className="container60-titleBox">
-									<div className="container60-titleBox_decorationLeft">
+						<div id={`info-${previewSize}`} style={{display:informStatus}}>
+							<div className="container-60">
+								<div className="container-60-titleBox">
+									<div className="container-60-titleBox_decorationLeft">
 										<img src={leftTitleIcon} alt='title decoration' className="leftTitleIcon" />
 									</div>
-									<div className="container60-titleBox_icon">
+									<div className="container-60-titleBox_icon">
 										<Icon {...icon} />
 									</div>
-									<div className="container60-titleBox_title">
+									<div className="container-60-titleBox_title">
 										<SecondaryTitle {...title} />
 									</div>
-									<div className="container60-titleBox_decorationRight">
+									<div className="container-60-titleBox_decorationRight">
 										<img src={rightTitleIcon} alt='title decoration' className="rightTitleIcon" />
 									</div>
 								</div>
-								<div className="container60-descriptionBox">
+								<div className="container-60-descriptionBox">
 									<Description {...description} />
 								</div>
 							</div>

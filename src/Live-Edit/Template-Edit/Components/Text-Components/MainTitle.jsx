@@ -2,7 +2,7 @@
 import React from 'react'
 
 const MainTitle = ({
-    id,
+    tag,
     actionType,
     content,
     fontSize,
@@ -45,7 +45,7 @@ const MainTitle = ({
         paddingRight : `${paddingRight}px`,
     }
     return (
-        <h1 id={id} name={actionType} style={style} >{content}</h1>
+        <h1 id={tag} name={actionType} style={style} >{content}</h1>
     )
 }
 

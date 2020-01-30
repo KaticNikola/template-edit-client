@@ -40,6 +40,7 @@ class BrameEntice extends Component {
 								</div>
 								<div className="container-right">
 									<EnticeConditionalComponent elementToShow={elementToShow}/>
+									{/* <img src="./assets/prize1.jpg" heigh='100px' width='100px' alt=""/> */}
 								</div>
 							</div>
 						</div>

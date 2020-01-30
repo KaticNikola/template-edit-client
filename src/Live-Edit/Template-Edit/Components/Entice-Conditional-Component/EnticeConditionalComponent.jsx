@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 
 import TextSlideshow from '../Text&Slideshow-Component/TextSlideshow'
+import Image from '../Image-Component/Image'
 
 import { Consumer } from '../../Template/Template-Context/TemplateContext';
 
@@ -10,10 +11,10 @@ export class EnticeConditionalComponent extends Component {
 			<Consumer>
 				{value =>{
 					const {elementToShow, options} = value.entice;
-					if (elementToShow === 'image') {
+					if (elementToShow === 'singleImage') {
 						return (
 							<div className="image">
-							image
+							<Image {...options.image}/>
 							</div>
 
 						)

@@ -1,7 +1,7 @@
 import React from 'react'
 
 const Description = ({
-    id,
+    tag,
     content,
     fontSize,
     fontType,
@@ -43,7 +43,7 @@ const Description = ({
         paddingRight : `${paddingRight}px`,
     }
     return (
-        <p id={id} style={style}>{content}</p>
+        <p id={tag} style={style}>{content}</p>
     )
 }
 

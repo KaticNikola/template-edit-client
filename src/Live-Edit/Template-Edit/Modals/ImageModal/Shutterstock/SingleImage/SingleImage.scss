@@ -1,0 +1,24 @@
+.album {
+  padding: 50px 40px;
+  display: flex;
+
+  &-upload {
+    width: 320px;
+    height: 220px;
+    border: 1px solid orangered;
+    // display: inline-block;
+  }
+
+  &-renderImg {
+    display: flex;
+    flex-wrap: wrap;
+
+    .wrapper {
+      &-upload {
+        width: 22%;
+        height: 220px;
+        border: 1px solid orangered;
+      }
+    }
+  }
+}

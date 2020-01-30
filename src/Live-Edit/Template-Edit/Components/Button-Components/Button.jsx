@@ -2,7 +2,7 @@
 import React from 'react'
 
 const Button = ({
-    id, 
+    tag, 
     actionType,
     //bg styles
     background,
@@ -90,7 +90,7 @@ const Button = ({
     }
 
     return (
-        <button id={id} name={actionType} style={style} >{content}</button>
+        <button id={tag} name={actionType} style={style} >{content}</button>
     )
 }
 

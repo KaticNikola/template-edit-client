@@ -4,8 +4,11 @@
   background-image: url('./assets/templateWrapperBg.png');
   // position: static !important;
   &-icon{
+    width: 130px;
     height: 65px;
-    text-align: center;
+    img{
+      
+    }
     
   }
   &-template{

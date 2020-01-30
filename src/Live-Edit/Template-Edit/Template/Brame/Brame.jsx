@@ -32,16 +32,16 @@ class Brame extends Component {
 		return (
 			<Consumer>
 				{value => {
-					const { previewSize, dispatch,introduceStatus, enticeStatus, informStatus, connectStatus,footerStatus } = value;
+					const { previewSize, dispatch,} = value;
 					return (
 						<div id="brame" className={previewSize} onClick={this.handleSelectElement.bind(this, dispatch)}>
 							<div style={{width:"100%"}}>
-								<BrameIntroduce status={introduceStatus}/>
-								<BrameEntice status={enticeStatus} />
+								<BrameIntroduce />
+								<BrameEntice  />
 								<BrameEngage />
-								<BrameInfo status={informStatus} />
-								<BrameConnect status={connectStatus} />
-								<BrameFooter status={footerStatus}/>
+								<BrameInfo  />
+								<BrameConnect  />
+								<BrameFooter />
 							</div>
 						</div>
 					)

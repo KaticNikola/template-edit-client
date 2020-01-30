@@ -16,7 +16,7 @@ class BrameEngage extends Component {
 		return (
 			<Consumer>
 				{value => {
-						const { previewSize } = value;
+					const { previewSize } = value;
 					const { title, description1, description2, icon } = value.engage;
 					return (
 						<div id={`engage-${previewSize}`}>
@@ -26,7 +26,7 @@ class BrameEngage extends Component {
 								<div className="container-titleBox">
 									<div className="container-titleBox_icon">
 										{/* <img src={gift} alt="gift" /> */}
-										<Icon {...icon}/>
+										<Icon {...icon} />
 									</div>
 									<div className="container-titleBox_title">
 										<SecondaryTitle {...title} />
