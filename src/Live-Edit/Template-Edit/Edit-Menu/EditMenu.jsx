@@ -17,6 +17,7 @@ import SectionConnect from './Section-Connect/SectionConnect';
 
 import './EditMenu.scss'
 export class EditMenu extends Component {
+
   render() {
     let elementToEdit = null;
     //let formTypeControler = null;
