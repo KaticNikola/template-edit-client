@@ -1,0 +1,45 @@
+.end {
+  margin: 0px 30px;
+
+  &-title {
+    height: 65px;
+    padding-top: 15px;
+    border-bottom: 1px dotted #b4b4b4;
+    font-size: 26px;
+    color: #414141;
+  }
+  &-finish {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px auto;
+
+    &_text {
+      text-align: center;
+      
+      h3 {
+        color: rgb(0, 0, 0);
+        font-size: 18px;
+        margin-bottom: 15px;
+      }
+      p {
+        color: #b4b4b4;
+      }
+    }
+    &_cta {
+      margin-top: 20px;
+      border: 1px 1px red;
+      text-align: center;
+      padding: 20px 10px;
+      a {
+        margin: 30px auto !important;
+        padding: 10px 30px;
+        background-image: linear-gradient(to right top, #58ad63, #75b45a, #92b951, #afbe4b, #ccc148);
+        color: rgb(255, 255, 255);
+        font-size: 18px;
+        text-decoration: none;
+        border-radius: 5px;
+      }
+    }
+  }
+}

@@ -3,7 +3,8 @@ import React, { Component } from 'react'
 import TextAreaField from '../../Components/InputField-Components/TextAreaField'
 import InputField from '../../Components/InputField-Components/InputField'
 import { Consumer } from '../../Template/Template-Context/TemplateContext';
-import { SECTION_CONTACT_STATUS, EDIT_CONTACT_LOCATION, EDIT_CONTACT_EMAIL, EDIT_CONTACT_PHONE } from '../../Template/Template-Context/TemplateTypes'
+import { SECTION_CONTACT_STATUS, EDIT_CONTACT_LOCATION, EDIT_CONTACT_EMAIL, EDIT_CONTACT_PHONE, MODAL_STATUS } from '../../Template/Template-Context/TemplateTypes'
+import ChangeImage from '../../Components/InputField-Components/ChangeImage'
 
 import './SectionConnect.scss'
 export class SectionConnect extends Component {
@@ -53,13 +54,26 @@ export class SectionConnect extends Component {
 
     })
   }
+
+  handeOpenModal = (dispatch, e) => {
+    let id = e.target.id
+    console.log(`imgpicker - ${id}`)
+
+    dispatch({
+      type: MODAL_STATUS,
+      payload: e.target.id
+
+      // selectionKey
+
+    })
+  }
   // salje 
   render() {
     return (
       <Consumer>
         {value => {
           const { dispatch } = value;
-          const { connectStatus, location, phone, email } = value.contact
+          const { connectStatus, location, phone, email, background } = value.contact
 
           return (
             <div className='connect'>
@@ -78,7 +92,7 @@ export class SectionConnect extends Component {
                   </div>
                   <div className="connect-content_section_checkbox"
                     onClick={this.handleShowHideSection.bind(this, dispatch)}>
-                    <input type="checkbox" name="connect" value=""/>
+                    <input type="checkbox" name="connect" value="" />
                     <span class="checkmark"></span>
                   </div>
                 </div>
@@ -114,6 +128,15 @@ export class SectionConnect extends Component {
                     placeholder='email'
                     value={email.content}
                   />
+                </div>
+                <div className="introduce-content_section"
+                  onClick={this.handeOpenModal.bind(this, dispatch)}
+                  id='on'>
+                  {/* <img src={background} alt=""/> */}
+                  <ChangeImage
+                    id='on'
+                    label='Change Background'
+                    background={background} />
                 </div>
 
               </div>

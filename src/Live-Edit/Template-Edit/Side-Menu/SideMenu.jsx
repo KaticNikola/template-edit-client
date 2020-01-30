@@ -69,11 +69,11 @@ export class SideMenu extends Component {
                 <i class="fas fa-link" id='contact'></i>
                   <p id='contact'>Connect</p>
                 </div>
-                <div id='End'
+                <div id='end'
                     className="sideMenu-tabs_tab"  
-                    style={{ backgroundColor: selectedElement === 'End' ? "#F5F5F5" : " #EBEBEB" }}>
+                    style={{ backgroundColor: selectedElement === 'end' ? "#F5F5F5" : " #EBEBEB" }}>
                   <img src="./assets/end.png" alt="" />
-                  <p id='End'>End</p>
+                  <p id='end'>End</p>
                 </div>
               </div>
 

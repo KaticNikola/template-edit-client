@@ -1,0 +1,12 @@
+.text {
+  margin: 0;
+  padding: 0px 20px ;
+  &-title {
+    height: 65px;
+    padding-top: 15px;
+    font-size: 26px;
+    color: #414141;
+    border-bottom: 1px dotted #b4b4b4;
+    margin-bottom: 40px;
+  }
+}

@@ -2,12 +2,13 @@ export const SELECTED_ELEMENT = 'SELECTED_ELEMENT';
 export const EDITMODE_CONTROLER = 'EDITMODE_CONTROLER';
 export const PREVIEW_SIZE = 'preview_size';
 export const INTRODUCE_STATUS = 'introduceStatus';
+export const UPLOAD_IMAGE = ' uploadImage';
+export const SELECT_IMAGE = ' selectImage';
+export const REMOVE_IMAGE = ' removeImage';
 //modal contorler
 export const MODAL_STATUS = 'modalStatus';
 export const MODAL_IMAGE_SOURCE = 'modalImageSource';
 export const MODAL_ICON_SOURCE = 'modalIconSource';
-
-
 
 
 export const EDIT_INTRODUCE_TITLE = 'introduceTitle';

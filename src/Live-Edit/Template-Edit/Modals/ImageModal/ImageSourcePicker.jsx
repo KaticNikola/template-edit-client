@@ -1,5 +1,8 @@
 import React, { Component } from 'react'
 
+
+import UserAlbum from './UserAlbum/UserAlbum';
+import Shutterstock from './Shutterstock/Shutterstock'
 import { Consumer } from '../../Template/Template-Context/TemplateContext'
 export class ImageSourcePicker extends Component {
   render() {
@@ -7,24 +10,20 @@ export class ImageSourcePicker extends Component {
       <Consumer>
         {value => {
           const { imageModalSource } = value;
-          return(
-            <div className="test">
-              {imageModalSource}
-            </div>
-          )
-          // if (imageModalSource === 'album') {
-          //   return (
-          //     <>
-          //       {imageModalSource}
-          //     </>
-          //   )
-          // } else if (imageModalSource === 'shutterstock') {
-          //   return (
-          //     <>
-          //       {imageModalSource}
-          //     </>
-          //   )
-          // }
+          
+          if (imageModalSource === 'album') {
+            return (
+              <>
+                <UserAlbum/>
+              </>
+            )
+          } else if (imageModalSource === 'shutterstock') {
+            return (
+              <>
+                <Shutterstock/>
+              </>
+            )
+          }
 
         }}
       </Consumer>

@@ -28,9 +28,9 @@ class BrameInfo extends Component {
 			<Consumer>
 				{value => {
 					const { previewSize } = value
-					const { status, title, description, icon, elementToShow } = value.information;
+					const { informStatus, title, description, icon, elementToShow } = value.information;
 					return (
-						<div id={`info-${previewSize}`} style={{display:status}}>
+						<div id={`info-${previewSize}`} style={{display:informStatus}}>
 							<div className="container-60">
 								<div className="container-60-titleBox">
 									<div className="container-60-titleBox_decorationLeft">

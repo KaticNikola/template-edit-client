@@ -3,7 +3,8 @@ import React, { Component } from 'react'
 import SelectField from '../../Components/InputField-Components/SelectField'
 
 import { Consumer } from '../../Template/Template-Context/TemplateContext';
-import { SECTION_ENTICE_STATUS,  ENTICE_ELEMENT_TO_SHOW} from '../../Template/Template-Context/TemplateTypes'
+import { SECTION_ENTICE_STATUS, ENTICE_ELEMENT_TO_SHOW } from '../../Template/Template-Context/TemplateTypes'
+import InputField from '../../Components/InputField-Components/InputField'
 
 import './SectionEntice.scss'
 export class SectionEntice extends Component {
@@ -39,12 +40,32 @@ export class SectionEntice extends Component {
       }
     })
   }
+  handleChange = (dispatch, e) => {
+    e.preventDefault();
+
+    const property = e.target.name;
+    const value = e.target.value;
+    const selectedElement = this.props.selectedElement;
+    console.log(`from edit 1 ${property}`)
+    console.log(`from edit 2${value}`)
+    console.log(`from edit 3${selectedElement}`)
+
+
+    dispatch({
+      type: selectedElement,//selectedElement 
+      payload: {
+        property,
+        value
+      }
+    })
+
+  }
   render() {
     return (
       <Consumer>
         {value => {
           const { dispatch } = value;
-          const { enticeStatus, } = value.entice
+          const { enticeStatus, background} = value.entice
           return (
             <div className='entice'>
               <div className="entice-content">
@@ -67,8 +88,8 @@ export class SectionEntice extends Component {
                   </div>
                 </div>
 
-                <div className="entice-content_layout" 
-                onClick={this.handleElementToShow.bind(this, dispatch)}>
+                <div className="entice-content_layout"
+                  onClick={this.handleElementToShow.bind(this, dispatch)}>
                   <SelectField
                     label='Content layout'
                     options={[
@@ -76,7 +97,15 @@ export class SectionEntice extends Component {
                       { value: "singleImage", label: 'Single Image' },
                     ]} />
                 </div>
-
+                {/* <div className="text-field" onchange={this.handleChange.bind(this, dispatch)}>
+                  <InputField
+                    label="Background Color"
+                    type="color"
+                    name='backgroundColor'
+                    placeholder={background.backgroundColor}
+                    value={background.backgroundColor}
+                  />
+                </div> */}
                 {/* <div className="entice-content_layout">
                   <SelectField
                     label='Slide count'

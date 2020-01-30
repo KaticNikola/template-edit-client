@@ -37,7 +37,7 @@ export class EditFormButton extends Component {
       <Consumer>
         {value => {
           const { dispatch } = value;
-          const { content, fontSize, lineHeight, letterSpacing,
+          const { content, fontSize, color, background, lineHeight, letterSpacing,
             marginTop, marginLeft, marginBottom, marginRight,
             paddingTop, paddingLeft, paddingBottom, paddingRight } = this.props.elementToEdit;
           return (
@@ -77,6 +77,24 @@ export class EditFormButton extends Component {
                     { value: "900", label: 900 },
 
                   ]} />
+              </div>
+              <div className="text-field">
+                <InputField
+                  label="Font Color"
+                  type="color"
+                  name='color'
+                  placeholder={color}
+                  value={color}
+                />
+              </div>
+              <div className="text-field">
+                <InputField
+                  label="backgorund Color"
+                  type="color"
+                  name='background'
+                  placeholder={color}
+                  value={background}
+                />
               </div>
 
 

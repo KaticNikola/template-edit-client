@@ -4,7 +4,7 @@ import ImageSourcePicker from './ImageSourcePicker'
 import SelectField from '../../Components/InputField-Components/SelectField'
 
 import { Consumer } from '../../Template/Template-Context/TemplateContext'
-import { MODAL_IMAGE_SOURCE} from '../../Template/Template-Context/TemplateTypes'
+import { MODAL_IMAGE_SOURCE, } from '../../Template/Template-Context/TemplateTypes'
 import './ImageModal.scss';
 export class ImageModal extends Component {
 
@@ -19,11 +19,21 @@ export class ImageModal extends Component {
         payload: source
       })
     }
+
+    handleSelectImage = (dispatch, e) => {
+      let id = e.target.id;
+      console.log(id)
+  const { elementToEdit } = this.props
+      // dispatch({
+      //   type: SELECT_IMAGE,
+      //   payload: id
+      // })
+    }
   render() {
     return (
       <Consumer>
         {value => {
-          const { dispatch,modalImageSource, imageModalSource } = value;
+          const { dispatch, imageModalSource } = value;
           return (
             <div className="modal">
               <div className="modal-header">
@@ -56,9 +66,10 @@ export class ImageModal extends Component {
                   Delete
                 </button>
                 <div className="modal-footer_cta">
-                  <button className="cancel button">Cancel</button>
-                  {/* onclick > selektovanom slikom updetujes state  */}
-                  <button className="select button">
+                  <button className="cancel button"
+                    onClick={this.handleCancel.bind(this, dispatch)}>Cancel</button>
+                  <button className="select button" 
+                     onClick={this.handleSelect.bind(this, dispatch)}>
                     Select
                     <i className="fas fa-check"></i>
                   </button>

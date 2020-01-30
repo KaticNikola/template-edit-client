@@ -131,16 +131,25 @@ export class EditFormText extends Component {
 
                   ]} />
               </div>
+              <div className="text-field">
+                <InputField
+                  label="Font Color"
+                  type="color"
+                  name='color'
+                  placeholder={color}
+                  value={color}
+                />
+              </div>
 
 
               {/* test */}
-             <div className="text-field" onChange={this.handleFontFamilyChange.bind(this, dispatch)}>
+             {/* <div className="text-field" onChange={this.handleFontFamilyChange.bind(this, dispatch)}>
                 <FontFamilySelector
                   name='fontFamily'
                   selectedElement={selectedElement}
                   getFontFamily={this.getFontFamily}
                   label='Font Family' name='fontFamily' />
-              </div>
+              </div> */}
 
 
             

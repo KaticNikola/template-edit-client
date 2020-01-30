@@ -16,7 +16,14 @@ export class Modals extends Component {
           if (selectedElement === 'introduce') {
             elementToEdit = value.introduce.background;
             formTypeControler = 'image'
+          } else if (selectedElement === 'engage') {
+            elementToEdit = value.engage.background;
+            formTypeControler = 'image'
+          } else if (selectedElement === 'contact') {
+            elementToEdit = value.contact.background;
+            formTypeControler = 'image'
           }
+
 //return modal
           if(formTypeControler === 'image'){
             return(

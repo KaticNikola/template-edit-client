@@ -1,0 +1,19 @@
+.imageCard {
+  // margin-left: 20px;
+  width: 280px;
+  height: 220px;
+  // border: 1px solid orangered;
+  display: inline-block;
+  margin: 0px 20px 40px 20px;
+
+  &-image {
+    width: 280px;
+    height: 90%;
+  }
+  &-title {
+    text-align: center;
+    color: white;
+    height: 10%;
+    background: linear-gradient(25deg, rgba(88,173,100,1) 0%, rgba(203,192,71,1) 100%);
+  }
+}

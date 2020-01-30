@@ -14,6 +14,7 @@ import SectionEntice from './Section-Entice/SectionEntice';
 import SectionEngage from './Section-Engage/SectionEngage';
 import SectionInform from './Section-Inform/SectionInform';
 import SectionConnect from './Section-Connect/SectionConnect';
+import End from './End/End'
 import ImageUploader from './Image-Uploader/ImageUploader'
 
 import './EditMenu.scss'
@@ -278,6 +279,9 @@ export class EditMenu extends Component {
           else if (selectedElement === 'contact') {
             formTypeControler = 'Contact'
           }
+          else if (selectedElement === 'end') {
+            formTypeControler = 'End'
+          }
 
 
           //render froms
@@ -344,6 +348,13 @@ export class EditMenu extends Component {
             return (
               <div className="editMode">
                 <SectionConnect />
+              </div>
+            )
+          }
+          else if (editMode === 'on' && formTypeControler === 'End') {
+            return (
+              <div className="editMode">
+                <End />
               </div>
             )
           }
