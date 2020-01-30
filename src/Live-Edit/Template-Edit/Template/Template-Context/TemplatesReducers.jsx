@@ -506,7 +506,7 @@ const reducer = (state, action) => {
 			case SELECT_IMAGE:
 			return {
 				...state,
-				selectedImageId: state.selectedImageId = action.payload
+				selectedImagetag: state.selectedImagerag = action.payload
 			}
 			// case REMOVE_IMAGE:
 			// return {

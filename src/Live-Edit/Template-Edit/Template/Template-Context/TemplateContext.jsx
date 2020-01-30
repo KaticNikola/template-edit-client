@@ -304,7 +304,7 @@ export class Provider extends React.Component {
 			},
 			background: {
 				tag: 'introduceBackground',
-				background: "https://static.independent.co.uk/s3fs-public/thumbnails/image/2018/12/27/18/presents-under-tree.jpg?w968",//ne radi za img iz foldera
+				background: "https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BBRfMUB.img?h=552&w=750&m=6&q=60&u=t&o=f&l=f&x=1034&y=799",//ne radi za img iz foldera
 				backgroundColor: '',
 				backgroundRepeat: 'no-repeat',
 				backgroundPosition: 'center',

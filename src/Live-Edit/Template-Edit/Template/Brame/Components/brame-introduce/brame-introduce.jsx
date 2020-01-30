@@ -29,7 +29,7 @@ class BrameIntroduce extends Component {
 					// };
 					let bgStyle = {
 						color: 'white',
-						// background: `url(${background.background})`,
+						background: `url(${background.background})`,
 						backgroundRepeat: 'no-repeat',
 						backgroundPosition: 'center',
 						backgroundSize: 'cover',

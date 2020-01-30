@@ -21,13 +21,15 @@ export class ImageModal extends Component {
     }
 
     handleSelect = (dispatch, e) => {
-      let id = e.target.id;
-      console.log(id)
+      // let id = e.target.id;
+      // console.log(id)
       let type = this.props.elementToEdit.tag
-  const { selectedImagetag } = this.props
+      console.log(type)
+  // const { selectedImagetag } = this.props.selectedImagetag
+  // console.log( `test ${this.props.selectedImagetag}`)
       dispatch({
         type: type,
-        payload: id
+        payload: "id"
       })
     }
     handleCancel = (dispatch, e) => {
