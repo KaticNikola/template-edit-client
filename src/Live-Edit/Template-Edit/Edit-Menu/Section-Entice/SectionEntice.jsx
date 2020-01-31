@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 import SelectField from '../../Components/InputField-Components/SelectField'
 
 import { Consumer } from '../../Template/Template-Context/TemplateContext';
-import { SECTION_ENTICE_STATUS, ENTICE_ELEMENT_TO_SHOW } from '../../Template/Template-Context/TemplateTypes'
+import { SECTION_ENTICE_STATUS, ENTICE_ELEMENT_TO_SHOW, EDIT_ENTICE_BACKGROUND } from '../../Template/Template-Context/TemplateTypes'
 import InputField from '../../Components/InputField-Components/InputField'
 
 import './SectionEntice.scss'
@@ -35,8 +35,8 @@ export class SectionEntice extends Component {
     dispatch({
       type: ENTICE_ELEMENT_TO_SHOW,
       payload: id
-        // selectionKey
-    
+      // selectionKey
+
     })
   }
   handleChange = (dispatch, e) => {
@@ -51,7 +51,7 @@ export class SectionEntice extends Component {
 
 
     dispatch({
-      type: selectedElement,//selectedElement 
+      type: EDIT_ENTICE_BACKGROUND,//selectedElement 
       payload: {
         property,
         value
@@ -64,7 +64,7 @@ export class SectionEntice extends Component {
       <Consumer>
         {value => {
           const { dispatch } = value;
-          const { enticeStatus, background} = value.entice
+          const { enticeStatus, background } = value.entice
           return (
             <div className='entice'>
               <div className="entice-content">
@@ -96,6 +96,19 @@ export class SectionEntice extends Component {
                       { value: "singleImage", label: 'Single Image' },
                     ]} />
                 </div>
+
+                {/* <div className="entice-content_layout"
+                onchange={this.handleChange.bind(this, dispatch)}
+                >
+                  <InputField
+                    InputField
+                    label="backgorund Color"
+                    type="color"
+                    name='background'
+                    value={background.background}
+                  />
+                </div> */}
+
                 {/* <div className="text-field" onchange={this.handleChange.bind(this, dispatch)}>
                   <InputField
                     label="Background Color"
@@ -116,22 +129,11 @@ export class SectionEntice extends Component {
 
                 <p className="entice-content_layout">
                   Click on the layout elements to edit their content. We’ll save your changes as soon as you make them.
-          </p>
+                </p>
 
               </div>
               {/* select element koji ima option vlaue [sa elementima koje mozes da pokazes u sectionu ] > u menja value u state koja odredjuje u conditional component sta ce da se renderuje */}
 
-              {/* <div className="entice-finish">
-                <div className="entice-finish_text">
-                  <h3 className="title">Happy with what you see?</h3>
-                  <p className="description">
-                    Click Finish to save changes and complete editing your template.
-                  </p>
-                </div>
-                <div className="entice-finish_cta">
-                  <a href="#">Finish</a>
-                </div>
-              </div> */}
 
             </div>
           )

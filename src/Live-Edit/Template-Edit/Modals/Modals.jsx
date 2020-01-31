@@ -31,6 +31,10 @@ export class Modals extends Component {
             elementToEdit = value.entice.options.textSlideshow[1].image;
             formTypeControler = 'image'
           }
+          else if (selectedElement === 'enticeOptionT&S2Image') {
+            elementToEdit = value.entice.options.textSlideshow[2].image;
+            formTypeControler = 'image'
+          }
           else if (selectedElement === 'enticeOptionImg') {
             elementToEdit = value.entice.options.image;
             formTypeControler = 'image'

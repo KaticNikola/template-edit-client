@@ -611,7 +611,7 @@ export class Provider extends React.Component {
 			},
 			background: {
 				tag: 'informationBackground',
-				background: "url()",
+				background: "https://images.pexels.com/photos/3298041/pexels-photo-3298041.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
 				backgroundColor: '',
 				backgroundRepeat: '',
 				backgroundPosition: '',
@@ -732,7 +732,7 @@ export class Provider extends React.Component {
 			],
 			background: {
 				tag: 'contactBackground',
-				background: "https://static.independent.co.uk/s3fs-public/thumbnails/image/2018/12/27/18/presents-under-tree.jpg?w968",
+				background: "https://cdn.pixabay.com/photo/2017/12/18/18/38/christmas-3026688_960_720.jpg",
 				backgroundColor: '',
 				backgroundRepeat: '',
 				backgroundPosition: '',

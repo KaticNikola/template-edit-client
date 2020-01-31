@@ -4,7 +4,7 @@ import ImageSourcePicker from './ImageSourcePicker'
 import SelectField from '../../Components/InputField-Components/SelectField'
 
 import { Consumer } from '../../Template/Template-Context/TemplateContext'
-import { MODAL_IMAGE_SOURCE, MODAL_STATUS } from '../../Template/Template-Context/TemplateTypes'
+import { MODAL_IMAGE_SOURCE, MODAL_STATUS,EDIT_INFORMATION_OPTIONS_IMAGEBANNER } from '../../Template/Template-Context/TemplateTypes'
 import './ImageModal.scss';
 export class ImageModal extends Component {
 
@@ -21,21 +21,31 @@ export class ImageModal extends Component {
   }
 
   handleSelect = (dispatch, e) => {
-    // let id = e.target.id;
-    // console.log(id)
-    let type = this.props.elementToEdit.tag
+
+    // let type = this.props.elementToEdit.tag
+    let type
+    
+  
+    if(this.props.elementToEdit.tag === 'informationOptionImg'){
+      type = EDIT_INFORMATION_OPTIONS_IMAGEBANNER
+    } else {
+      type = this.props.elementToEdit.tag
+    }
     console.log(type)
-    // const { selectedImagetag } = this.props.selectedImagetag
     console.log(`test ${this.props.selectedImagetag}`)
+    let url = this.props.selectedImagetag
+
     dispatch({
-      type: type,
-      payload: this.props.selectedImagetag
+      type: type ,
+      payload: url
     })
+
     dispatch({
       type: MODAL_STATUS,
       payload: 'none'
     })
   }
+
   handleCancel = (dispatch, e) => {
 
     dispatch({
