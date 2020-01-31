@@ -23,12 +23,30 @@ export class Modals extends Component {
             elementToEdit = value.contact.background;
             formTypeControler = 'image'
           }
+          else if (selectedElement === 'enticeOptionT&S0Image') {
+            elementToEdit = value.entice.options.textSlideshow[0].image;
+            formTypeControler = 'image'
+          }
+          else if (selectedElement === 'enticeOptionT&S1Image') {
+            elementToEdit = value.entice.options.textSlideshow[1].image;
+            formTypeControler = 'image'
+          }
+          else if (selectedElement === 'enticeOptionImg') {
+            elementToEdit = value.entice.options.image;
+            formTypeControler = 'image'
+          }
+          else if (selectedElement === 'informationOptionImg') {
+            elementToEdit = value.information.options.imageBanner;
+            formTypeControler = 'image'
+          }
 
 //return modal
           if(formTypeControler === 'image'){
             return(
               <>
-                <ImageModal elementToEdit={elementToEdit} selectedImagetag={selectedImagetag}/>
+                <ImageModal 
+                  elementToEdit={elementToEdit} 
+                  selectedImagetag={selectedImagetag}/>
               </>
             )
           }

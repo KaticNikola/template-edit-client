@@ -13,7 +13,7 @@ export class ChangeImage extends Component {
             image name
           </p>
           <div className="changeImage-content_image">
-              <img  id={ tag} src={background.background} alt=""/>
+              <img  id={ tag} src={background} alt=""/>
           </div>
 
         </div>

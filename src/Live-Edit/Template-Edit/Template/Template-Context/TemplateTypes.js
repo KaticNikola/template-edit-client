@@ -47,7 +47,8 @@ export const EDIT_ENTICE_PRICE_2_IMAGE = 'enticeOptionT&S1Image';
 
 export const EDIT_ENTICE_PRICE_3_TITLE = 'enticeOptionT&S2Title';
 export const EDIT_ENTICE_PRICE_3_IMAGE = 'enticeOptionT&S2Image';
-
+//imge banner
+export const EDIT_ENTICE_OPTIONS_SINGLEIMAGE = 'enticeOptionImg';
 
 // ***** GAME *****
 export const EDIT_ENGAGE_TITLE = 'engageTitle';
@@ -70,7 +71,7 @@ export const EDIT_INFORMATION_CARD_1_SUBTITLE = 'informationCard1Subtitle';
 export const EDIT_INFORMATION_CARD_1_ICON = 'informationCard1Icon';
 export const EDIT_INFORMATION_CARD_1_DESCRIPTION = 'informationCard1Description';
 export const EDIT_INFORMATION_CARD_1_IMAGE = 'informationCard1Image ';
-
+export const EDIT_INFORMATION_OPTIONS_IMAGEBANNER = 'informationOptionImg ';
 
 
 // ***** CONTACT *****

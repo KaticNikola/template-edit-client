@@ -28,12 +28,12 @@ export class SectionIntroduce extends Component {
   }
 
   handeOpenModal = (dispatch, e) => {
-    let id = e.target.id
-    console.log(`imgpicker - ${id}`)
+    // let id = e.target.id
+    // console.log(`imgpicker - ${id}`)
 
     dispatch({
       type: MODAL_STATUS,
-      payload: e.target.id
+      payload: 'on'
        
         // selectionKey
 
@@ -76,7 +76,7 @@ export class SectionIntroduce extends Component {
                   <ChangeImage
                     tag='on'
                     label='Change Background'
-                    background={background}/>
+                    background={background.background}/>
                 </div>
 
 

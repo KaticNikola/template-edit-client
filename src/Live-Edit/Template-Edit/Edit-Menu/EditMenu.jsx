@@ -6,7 +6,9 @@ import { Consumer } from '../Template/Template-Context/TemplateContext';
 
 import EditFormText from './EditForm-Text/EditFormText'
 import EditFormButton from './EditForm-Button/EditFormButton';
-import TextAndSlideshow from './Text&Slideshow/Text&Slideshow'
+import TextSlideshow from './TextSlideshow/TextSlideshow';
+import ImageBanner from './ImageBanner/ImageBanner'
+import SingleImage from './SingleImage/SingleImage'
 
 import StartNavigation from './StartNavigation/StartNavigation'
 import SectionIntroduce from './Section-Introduce/SectionIntroduce'
@@ -81,37 +83,38 @@ export class EditMenu extends Component {
             elementToEdit = value.entice.description2;
             formTypeControler = 'text'
           }
+          // samo slike
+          else if (
+              selectedElement === 'enticeOptionT&S0Image' ||
+              selectedElement === 'enticeOptionT&S1Image' ||
+              selectedElement === 'enticeOptionT&S2Image' ) {
+            elementToEdit = value.entice.options.textSlideshow;
+            formTypeControler = 'textSlideshow'
+          }
 
           //PRIZE 1
           else if (selectedElement === 'enticeOptionT&S0Title') {
             elementToEdit = value.entice.options.textSlideshow[0].title;
             formTypeControler = 'text'
           }
-
-          // else if (selectedElement === 'enticePrice1Image') {
-          // 	elementToEdit = value.entice.price1Image;
-          // 	formTypeControler = 'image'//mozda i section
-          // }
           //PRIZE 2
           else if (selectedElement === 'enticeOptionT&S1Title') {
             elementToEdit = value.entice.options.textSlideshow[1].title;
             formTypeControler = 'text'
           }
 
-          // else if (selectedElement === 'enticePrice2Image') {
-          // 	elementToEdit = value.entice.price2Image;
-          // 	formTypeControler = 'image'//mozda i section
-          // }
-          //PRIZE 3
+           //PRIZE 3
           else if (selectedElement === 'enticeOptionT&S2Title') {
             elementToEdit = value.entice.options.textSlideshow[2].title;
             formTypeControler = 'text'
           }
 
-          // else if (selectedElement === 'enticePrice3Image') {
-          // 	elementToEdit = value.entice.price2Image;
-          // 	formTypeControler = 'image'//mozda i section
-          // }
+        
+          else if (selectedElement === 'enticeOptionImg') {
+            elementToEdit = value.entice.options.image;
+            formTypeControler = 'SingleImage'
+          }
+
 
           // //bg
           // else if (selectedElement === 'enticeBackground') {
@@ -156,6 +159,10 @@ export class EditMenu extends Component {
           else if (selectedElement === 'informationDescription') {
             elementToEdit = value.information.description;
             formTypeControler = 'text'
+          }
+          else if (selectedElement === 'informationOptionImg') {
+            elementToEdit = value.information.options.imageBanner;
+            formTypeControler = 'ImageBanner'
           }
           //info card1
           else if (selectedElement === 'informationCard1Title') {
@@ -231,7 +238,7 @@ export class EditMenu extends Component {
 
 
 
-          //COTACT
+          //CONTACT
           else if (selectedElement === 'contactTitleIcon') {
             elementToEdit = value.contact.icon;
             formTypeControler = 'icon'
@@ -284,7 +291,8 @@ export class EditMenu extends Component {
           }
 
 
-          //render froms
+          //****************render froms************************** 
+
           if (editMode === 'on' && selectedElement === '') {
             return (
               <div className="emptyForm">
@@ -309,6 +317,34 @@ export class EditMenu extends Component {
               </div>
             )
           }
+          else if (editMode === 'on' && formTypeControler === 'textSlideshow') {
+            return (
+              <div className="editMode">
+                <TextSlideshow
+                  selectedElement={selectedElement}
+                  elementToEdit={elementToEdit} />
+              </div>
+            )
+          }
+          else if (editMode === 'on' && formTypeControler === 'ImageBanner') {
+            return (
+              <div className="editMode">
+                <ImageBanner
+                  selectedElement={selectedElement}
+                  elementToEdit={elementToEdit} />
+              </div>
+            )
+          }
+          else if (editMode === 'on' && formTypeControler === 'SingleImage') {
+            return (
+              <div className="editMode">
+                <SingleImage
+                  selectedElement={selectedElement}
+                  elementToEdit={elementToEdit} />
+              </div>
+            )
+          }
+
           else if (editMode === 'on' && formTypeControler === 'start') {
             return (
               <div className="editMode">

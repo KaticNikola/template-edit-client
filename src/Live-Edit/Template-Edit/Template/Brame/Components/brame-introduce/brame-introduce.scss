@@ -31,12 +31,12 @@ $button-txt-Phone: 20px;
 
 
 #introduce-PC {
-  background: url("./assets/introduce-bg.svg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 100%;
-  height: 100vh;
+  // background: url("./assets/introduce-bg.svg");
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  width: 100% !important;
+  height: 100vh !important;
 
   //test
   display: flex;
@@ -127,13 +127,12 @@ $button-txt-Phone: 20px;
 }
 
 
-
 #introduce-Tablet {
   background: url("./assets/introduce-bg.svg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 900px;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  width: 900px !important;
   height: 100vh;
   margin: 0px auto;
 
@@ -228,10 +227,10 @@ $button-txt-Phone: 20px;
 
 #introduce-Phone {
   background: url("./assets/introduce-bg.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 480px;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  width: 480px !important;
   height: 100vh;
   margin: 0px auto;
 

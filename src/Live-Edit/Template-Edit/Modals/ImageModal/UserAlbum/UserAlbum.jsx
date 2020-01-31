@@ -7,7 +7,6 @@ import { Consumer } from '../../../Template/Template-Context/TemplateContext'
 import './UserAlbum.scss'
 export class UserAlbum extends Component {
 
-
   handeUploadimg = (e, dispatch) => {
 
 

@@ -4,45 +4,49 @@ import ImageSourcePicker from './ImageSourcePicker'
 import SelectField from '../../Components/InputField-Components/SelectField'
 
 import { Consumer } from '../../Template/Template-Context/TemplateContext'
-import { MODAL_IMAGE_SOURCE, MODAL_STATUS} from '../../Template/Template-Context/TemplateTypes'
+import { MODAL_IMAGE_SOURCE, MODAL_STATUS } from '../../Template/Template-Context/TemplateTypes'
 import './ImageModal.scss';
 export class ImageModal extends Component {
 
-    //chage img source
-    handleChangeSource = (dispatch, e) => {
-      e.preventDefault();
-      let source = e.target.value;
-      console.log(`change ${source}`)
-  
-      dispatch({
-        type: MODAL_IMAGE_SOURCE,
-        payload: source
-      })
-    }
+  //chage img source
+  handleChangeSource = (dispatch, e) => {
+    e.preventDefault();
+    let source = e.target.value;
+    console.log(`change ${source}`)
 
-    handleSelect = (dispatch, e) => {
-      // let id = e.target.id;
-      // console.log(id)
-      let type = this.props.elementToEdit.tag
-      console.log(type)
-  // const { selectedImagetag } = this.props.selectedImagetag
-  // console.log( `test ${this.props.selectedImagetag}`)
-      dispatch({
-        type: type,
-        payload: "id"
-      })
-    }
-    handleCancel = (dispatch, e) => {
-    
-      dispatch({
-        type: MODAL_STATUS,
-        payload: 'none'
-      })
-    }
+    dispatch({
+      type: MODAL_IMAGE_SOURCE,
+      payload: source
+    })
+  }
+
+  handleSelect = (dispatch, e) => {
+    // let id = e.target.id;
+    // console.log(id)
+    let type = this.props.elementToEdit.tag
+    console.log(type)
+    // const { selectedImagetag } = this.props.selectedImagetag
+    console.log(`test ${this.props.selectedImagetag}`)
+    dispatch({
+      type: type,
+      payload: this.props.selectedImagetag
+    })
+    dispatch({
+      type: MODAL_STATUS,
+      payload: 'none'
+    })
+  }
+  handleCancel = (dispatch, e) => {
+
+    dispatch({
+      type: MODAL_STATUS,
+      payload: 'none'
+    })
+  }
   render() {
     return (
       <Consumer>
-        {value => {
+        {value => {	
           const { dispatch, imageModalSource } = value;
           return (
             <div className="modal">
@@ -78,8 +82,8 @@ export class ImageModal extends Component {
                 <div className="modal-footer_cta">
                   <button className="cancel button"
                     onClick={this.handleCancel.bind(this, dispatch)}>Cancel</button>
-                  <button className="select button" 
-                     onClick={this.handleSelect.bind(this, dispatch)}>
+                  <button className="select button"
+                    onClick={this.handleSelect.bind(this, dispatch)}>
                     Select
                     <i className="fas fa-check"></i>
                   </button>

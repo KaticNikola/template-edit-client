@@ -28,14 +28,19 @@ class BrameIntroduce extends Component {
 					// 	background: `url("./assets/introduce-bg.svg")`
 					// };
 					let bgStyle = {
-						color: 'white',
 						background: `url(${background.background})`,
 						backgroundRepeat: 'no-repeat',
 						backgroundPosition: 'center',
 						backgroundSize: 'cover',
 					}
 					return (
-						<div id={`introduce-${previewSize}`} style={bgStyle}>
+						<div style={{
+								background : `url(${background.background})`,
+								 backgroundSize: 'cover',	
+								 backgroundRepeat: 'no-repeat',
+								 width: "100%",
+								 height: "100vh"
+								 }} id={`introduce-${previewSize}`} >
 							<div className="navbar" >
 								<BrameNav />
 							</div>

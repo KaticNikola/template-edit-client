@@ -29,10 +29,18 @@ class BrameConnect extends Component {
 			<Consumer>
 				{value => {
 					const { previewSize } = value;
-					const { connectStatus, title, description, icon, location, phone, email } = value.contact;
+					const { connectStatus, title, description, icon, location, phone, email, background} = value.contact;
 
 					return (
-						<div id={`connect-${previewSize}`} style={{display:connectStatus}}>
+						<div  style={{
+							background : `url(${background.background})`,
+							 backgroundSize: 'cover',	
+							 backgroundRepeat: 'no-repeat',
+							 width: "100%",
+							 height: "100vh",
+							 display:connectStatus
+							 }}
+							 id={`connect-${previewSize}`}>
 							<div className="overlay">
 								<div className="top-border"></div>
 								<div className="container">
@@ -44,7 +52,6 @@ class BrameConnect extends Component {
 										<div className="container-info_titleBox">
 											<div className="title">
 												<SecondaryTitle {...title}/>
-
 											</div>
 											<div className="icon">
 												<Icon {...icon} />

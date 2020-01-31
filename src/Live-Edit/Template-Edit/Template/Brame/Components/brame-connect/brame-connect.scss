@@ -1,8 +1,10 @@
 #connect-PC {
   background-image: url("./assets/bg.svg");
-  background-size: cover;
-
-  height: 75vh;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  width: 100% !important;
+  height: 60vh !important;
 
   .container {
     width: 80%;
@@ -91,10 +93,13 @@
 
 #connect-Tablet {
   background-image: url("./assets/bg.svg");
-  background-size: cover;
-  width: 900px;
-  margin: 0px auto;
-  height: 90vh;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  width: 900px !important;
+  height: 90vh !important; 
+  margin: 0px auto ;
+
 
   .container {
     width: 100%;
@@ -148,6 +153,10 @@
           margin: 10px 0px;
           justify-content: flex-end;
           display: flex;
+          i{
+            margin-left: 10px;
+            color: #d8383c;
+          }
         }
       }
 
@@ -180,8 +189,10 @@
 
 #connect-Phone {
   background-image: url("./assets/bg.svg");
-  background-size: cover;
-  width: 480px;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  width: 480px !important;
   margin: 0px auto;
   // height: 100vh;
 
@@ -242,9 +253,11 @@
           text-align: center;
           display: flex;
           flex-direction: column-reverse;
-          img {
+          i {
             width: 25px;
             margin: 5px auto;
+            color: #d8383c;
+            
           }
         }
       }

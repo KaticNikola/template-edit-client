@@ -136,7 +136,7 @@ export class SectionConnect extends Component {
                   <ChangeImage
                     tag='on'
                     label='Change Background'
-                    background={background} />
+                    background={background.url} />
                 </div>
 
               </div>

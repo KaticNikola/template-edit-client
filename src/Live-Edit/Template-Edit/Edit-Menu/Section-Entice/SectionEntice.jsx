@@ -34,10 +34,9 @@ export class SectionEntice extends Component {
     console.log(`id${id}`)
     dispatch({
       type: ENTICE_ELEMENT_TO_SHOW,
-      payload: {
-        id
+      payload: id
         // selectionKey
-      }
+    
     })
   }
   handleChange = (dispatch, e) => {

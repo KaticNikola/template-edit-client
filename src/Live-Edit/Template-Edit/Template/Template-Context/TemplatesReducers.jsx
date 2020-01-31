@@ -25,6 +25,7 @@ import {
 	EDIT_ENTICE_PRICE_2_IMAGE,
 	EDIT_ENTICE_PRICE_3_TITLE,
 	EDIT_ENTICE_PRICE_3_IMAGE,
+	EDIT_ENTICE_OPTIONS_SINGLEIMAGE,
 
 	EDIT_ENGAGE_TITLE,
 	EDIT_ENGAGE_ICON,
@@ -38,6 +39,7 @@ import {
 	EDIT_INFORMATION_DESCRIPTION,
 	EDIT_INFORMATION_BACKGROUND,
 	INFORMATION_ELEMENT_TO_SHOW,
+	EDIT_INFORMATION_OPTIONS_IMAGEBANNER,
 
 	SECTION_CONTACT_STATUS,
 	EDIT_CONTACT_TITLE,
@@ -69,11 +71,7 @@ const reducer = (state, action) => {
 		case EDIT_INTRODUCE_BACKGROUND:
 			return {
 				...state.introduce.background,
-				backgroun: [state.introduce.background].map(key => {
-					console.log(` from context ${action.payload}`)
-					key[`${action.payload.property}`] = action.payload.value
-					// console.log(key[`${action.payload.property}`])
-				})
+				background: state.introduce.background.background = action.payload
 			}
 		case EDIT_INTRODUCE_TITLE:
 			return {
@@ -205,7 +203,7 @@ const reducer = (state, action) => {
 		case ENTICE_ELEMENT_TO_SHOW:
 			return {
 				...state.entice.elementToShow,
-				elementToShow: state.entice.elementToShow = action.payload.id
+				elementToShow: state.entice.elementToShow = action.payload
 				// console.log(key[`${action.payload.property}`])
 			}
 		//P1
@@ -220,12 +218,9 @@ const reducer = (state, action) => {
 			}
 		case EDIT_ENTICE_PRICE_1_IMAGE:
 			return {
-				...state.state.entice.options.textSlideshow[0].title,
-				background: [state.entice.options.textSlideshow[0].title].map(key => {
-					console.log(` from context ${action.payload}`)
-					key[`${action.payload.property}`] = action.payload.value
+				...state.entice.options.textSlideshow[0].image,
+				url: state.entice.options.textSlideshow[0].image.url  = action.payload
 					// console.log(key[`${action.payload.property}`])
-				})
 			}
 		//P2
 		case EDIT_ENTICE_PRICE_2_TITLE:
@@ -239,12 +234,8 @@ const reducer = (state, action) => {
 			}
 		case EDIT_ENTICE_PRICE_2_IMAGE:
 			return {
-				...state.state.entice.options.textSlideshow[2].title,
-				background: [state.entice.options.textSlideshow[2].title].map(key => {
-					console.log(` from context ${action.payload}`)
-					key[`${action.payload.property}`] = action.payload.value
-					// console.log(key[`${action.payload.property}`])
-				})
+				...state.entice.options.textSlideshow[1].image,
+				url: state.entice.options.textSlideshow[1].image.url  = action.payload
 			}
 		//P3
 		case EDIT_ENTICE_PRICE_3_TITLE:
@@ -258,13 +249,17 @@ const reducer = (state, action) => {
 			}
 		case EDIT_ENTICE_PRICE_3_IMAGE:
 			return {
-				...state.state.entice.options.textSlideshow[2].title,
-				background: [state.entice.options.textSlideshow[2].title].map(key => {
-					console.log(` from context ${action.payload}`)
-					key[`${action.payload.property}`] = action.payload.value
-					// console.log(key[`${action.payload.property}`])
-				})
+				...state.entice.options.textSlideshow[2].image,
+				url: state.entice.options.textSlideshow[2].image.url  = action.payload
 			}
+			case EDIT_ENTICE_OPTIONS_SINGLEIMAGE:
+				return {
+					...state.entice.options.image,
+					url: state.entice.options.image.url  = action.payload
+				}
+
+
+
 
 		//********** ENGAGE  ***************/
 		case EDIT_ENGAGE_TITLE:
@@ -364,7 +359,11 @@ const reducer = (state, action) => {
 				elementToShow: state.information.elementToShow = action.payload
 				// console.log(key[`${action.payload.property}`])
 			}
-
+			case EDIT_INFORMATION_OPTIONS_IMAGEBANNER:
+				return {
+					...state.information.options.imageBanner,
+					url: state.information.options.imageBanner.url  = action.payload
+				}
 		//********** CONTACT  ***************/
 
 
@@ -440,11 +439,7 @@ const reducer = (state, action) => {
 		case EDIT_CONTACT_BACKGROUND:
 			return {
 				...state.contact.background,
-				background: [state.contact.background].map(key => {
-					console.log(action.payload)
-					key[`${action.payload.property}`] = action.payload.value
-					// console.log(key[`${action.payload.property}`])
-				})
+				background: state.contact.background.background = action.payload
 			}
 
 

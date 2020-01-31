@@ -21,32 +21,32 @@ export class Provider extends React.Component {
 		album:[
 			{
 				imagetag:'1',
-				url:'https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BBRfMUB.img?h=552&w=750&m=6&q=60&u=t&o=f&l=f&x=1034&y=799',
+				url:'https://cdn.pixabay.com/photo/2017/11/14/00/57/christmas-2947257_960_720.jpg',
 				title:'TEST'
 			},
 			{
 				imagetag:'1',
-				url:'https://lh6.googleusercontent.com/proxy/UvKAjDXLVFcGVeI27PaST2lWDsCBtbcb_zv_NzKVIX-wsOasNQNsWDzgxYBMVwoASpnuOYOg6SRjaZp6XIlXduMyTRU_Sudj5_eiHyDOMuaYu9KZ_me1PWKEVIh1N6m-mquksKcL',
+				url:'https://cdn.pixabay.com/photo/2017/12/18/18/38/christmas-3026688_960_720.jpg',
 				title:'TEST'
 			},
 			{
 				imagetag:'2',
-				url:'https://www.tes.com/tesv2/files/styles/news_article_ml_x2/public/news-images/presents.jpg?itok=U9SQpcDS',
+				url:'https://cdn.pixabay.com/photo/2017/03/27/13/14/christmas-present-2178635_960_720.jpg',
 				title:'TEST'
 			},
 			{
 				imagetag:'3',
-				url:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqdOCBahkiQv-VRpGoZSgiU0sCG_KMjoUW9SWQSRrVZs5SY0ewVQ&s',
+				url:'https://cdn.pixabay.com/photo/2014/09/13/21/49/gift-444519_960_720.jpg',
 				title:'TEST'
 			},
 			{
 				imagetag:'4',
-				url:'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/cropped-hands-of-woman-arranging-christmas-presents-royalty-free-image-889538316-1544619359.jpg?crop=0.670xw:1.00xh;0.190xw,0&resize=480:*',
+				url:'https://images.pexels.com/photos/3298041/pexels-photo-3298041.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
 				title:'TEST'
 			},
 			{
 				imagetag:'5',
-				url:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsPCV1624Nr-LavbIePUbvg7ZzrUyBi1_O4A7BzgYIv6mMOg9N&s',
+				url:'https://cdn.pixabay.com/photo/2012/03/03/22/57/bag-21467_960_720.jpg',
 				title:'TEST'
 			},
 			
@@ -304,7 +304,7 @@ export class Provider extends React.Component {
 			},
 			background: {
 				tag: 'introduceBackground',
-				background: "https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BBRfMUB.img?h=552&w=750&m=6&q=60&u=t&o=f&l=f&x=1034&y=799",//ne radi za img iz foldera
+				background: "https://cdn.pixabay.com/photo/2012/03/03/22/57/bag-21467_960_720.jpg",//ne radi za img iz foldera
 				backgroundColor: '',
 				backgroundRepeat: 'no-repeat',
 				backgroundPosition: 'center',
@@ -369,10 +369,10 @@ export class Provider extends React.Component {
 			elementToShow: 'textSlideshow',
 			options: {
 				textSlideshow: [
-					// img + title
 					{
 						title: {
-							tag: 'enticeOptionT&S0Title', //izmena 
+							// tag: 'enticeOptionT&S0Title', //izmena 
+							tag: 'enticeOptionT&S0Title', //test 
 							//actionType: 'EDIT_HEADER_TITILE',
 							content: "Win This Prize!",
 							fontSize: '',
@@ -387,8 +387,8 @@ export class Provider extends React.Component {
 
 						},
 						image: {
-							tag: 'enticeOptionT&S0Image',//izmena
-							url: './assets/prize1.jpg',
+							tag: 'enticeOptionT&S0Image', //test 
+							url: 'https://cdn.pixabay.com/photo/2017/12/18/18/38/christmas-3026688_960_720.jpg',
 							//koje cemo porperies da menjamo vezane za img 
 							backgroundPosition: 'center',
 							backgroundRepeat: 'no-reperat',
@@ -399,7 +399,7 @@ export class Provider extends React.Component {
 					},
 					{
 						title: {
-							tag: 'enticeOptionT&S1Title',//izmena
+							tag: 'enticeOptionT&S1Title', //test 
 							//actionType: 'EDIT_HEADER_TITILE',
 							content: "Win This Prize!",
 							fontSize: '',
@@ -414,15 +414,15 @@ export class Provider extends React.Component {
 
 						},
 						image: {
-							tag: 'enticeOptionT&S1Image',
-							url: "https://o.aolcdn.com/images/dims?quality=85&image_uri=https%3A%2F%2Fo.aolcdn.com%2Fimages%2Fdims%3Fcrop%3D1920%252C1080%252C0%252C0%26quality%3D85%26format%3Djpg%26resize%3D1600%252C900%26image_uri%3Dhttps%253A%252F%252Fs.yimg.com%252Fos%252Fcreatr-uploaded-images%252F2019-09%252Fa7ec8f80-e04e-11e9-bfaf-14f222042ebe%26client%3Da1acac3e1b3290917d92%26signature%3D953f11e05a621ef5141ef2508585859cbfee3eb5&client=amp-blogside-v2&signature=3ab20db4dc4b04dc6a07cebdfe9fa8497642394b",
+							tag: 'enticeOptionT&S1Image', //test 
+							url: "https://cdn.pixabay.com/photo/2014/09/13/21/49/gift-444519_960_720.jpg",
 
 						},
 
 					},
 					{
 						title: {
-							tag: 'enticeOptionT&S2Title',//izmena
+							tag: 'enticeOptionT&S2Title', //test 
 							//actionType: 'EDIT_HEADER_TITILE',
 							content: "Win This Prize!",
 							fontSize: '',
@@ -437,8 +437,8 @@ export class Provider extends React.Component {
 
 						},
 						image: {
-							tag: 'enticeOptionT&S2Image',//izmena
-							url: "https://o.aolcdn.com/images/dims?quality=85&image_uri=https%3A%2F%2Fo.aolcdn.com%2Fimages%2Fdims%3Fcrop%3D1920%252C1080%252C0%252C0%26quality%3D85%26format%3Djpg%26resize%3D1600%252C900%26image_uri%3Dhttps%253A%252F%252Fs.yimg.com%252Fos%252Fcreatr-uploaded-images%252F2019-09%252Fa7ec8f80-e04e-11e9-bfaf-14f222042ebe%26client%3Da1acac3e1b3290917d92%26signature%3D953f11e05a621ef5141ef2508585859cbfee3eb5&client=amp-blogside-v2&signature=3ab20db4dc4b04dc6a07cebdfe9fa8497642394b",
+							tag: 'enticeOptionT&S2Image', //test 
+							url: "https://images.pexels.com/photos/3298041/pexels-photo-3298041.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
 							linkTo: ''
 
 						},
@@ -447,8 +447,8 @@ export class Provider extends React.Component {
 
 				],
 				image: {
-					tag: "enticeptionImg",
-					url: "https://o.aolcdn.com/images/dims?quality=85&image_uri=https%3A%2F%2Fo.aolcdn.com%2Fimages%2Fdims%3Fcrop%3D1920%252C1080%252C0%252C0%26quality%3D85%26format%3Djpg%26resize%3D1600%252C900%26image_uri%3Dhttps%253A%252F%252Fs.yimg.com%252Fos%252Fcreatr-uploaded-images%252F2019-09%252Fa7ec8f80-e04e-11e9-bfaf-14f222042ebe%26client%3Da1acac3e1b3290917d92%26signature%3D953f11e05a621ef5141ef2508585859cbfee3eb5&client=amp-blogside-v2&signature=3ab20db4dc4b04dc6a07cebdfe9fa8497642394b",
+					tag: "enticeOptionImg",
+					url: "https://images.pexels.com/photos/3298036/pexels-photo-3298036.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
 					
 
 				},
@@ -598,8 +598,8 @@ export class Provider extends React.Component {
 			elementToShow: 'imageBanner',
 			options: {
 				imageBanner: {
-					tag: "enticeptionImg",
-					url: "https://o.aolcdn.com/images/dims?quality=85&image_uri=https%3A%2F%2Fo.aolcdn.com%2Fimages%2Fdims%3Fcrop%3D1920%252C1080%252C0%252C0%26quality%3D85%26format%3Djpg%26resize%3D1600%252C900%26image_uri%3Dhttps%253A%252F%252Fs.yimg.com%252Fos%252Fcreatr-uploaded-images%252F2019-09%252Fa7ec8f80-e04e-11e9-bfaf-14f222042ebe%26client%3Da1acac3e1b3290917d92%26signature%3D953f11e05a621ef5141ef2508585859cbfee3eb5&client=amp-blogside-v2&signature=3ab20db4dc4b04dc6a07cebdfe9fa8497642394b",
+					tag: "informationOptionImg",
+					url: "https://cmkt-image-prd.freetls.fastly.net/0.1.0/ps/7222058/910/605/m2/fpnw/wm1/y5pmvyrxydn3qi50tr4wnwoqf6kzuwmgljf5ybzrjtsldfbm2wiacorj7lzywcgf-.jpg?1572450792&s=c5b58325e6d21d34e1a7f52725aae7a9",
 					linkTo: '',// link ka nekom sajtu
 
 				},
