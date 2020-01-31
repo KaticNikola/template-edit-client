@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="690183d7-86b5-46f0-a828-c05e0e2f1661" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Components/InputField-Components/FontFamilySelector.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Components/InputField-Components/FontFamilySelector.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Components/InputField-Components/Upload.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Edit-Menu/End/End.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Edit-Menu/End/End.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Edit-Menu/Image-Uploader/ImagePicker/ImagePicker.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Edit-Menu/Image-Uploader/ImagePicker/ImagePicker.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Edit-Menu/Image-Uploader/ImageUploader.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Edit-Menu/Image-Uploader/ImageUploader.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Edit-Menu/Section-Connect/Section-End/SectionEnd.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Edit-Menu/Section-Connect/Section-End/SectionEnd.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Modals/ImageModal/ImageModal.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Modals/ImageModal/ImageModal.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Modals/ImageModal/ImageSourcePicker.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Modals/ImageModal/Shutterstock/RenderShutterstockImg/RenderShutterstockImg.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Modals/ImageModal/Shutterstock/Shutterstock.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Modals/ImageModal/Shutterstock/Shutterstock.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Modals/ImageModal/Shutterstock/SingleImage/SingleImage.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Modals/ImageModal/Shutterstock/SingleImage/SingleImage.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Modals/ImageModal/UserAlbum/UserAlbum.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Modals/ImageModal/UserAlbum/UserAlbum.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Modals/ImageModal/UserAlbum/renderImages/RenderImages.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Modals/ImageModal/UserAlbum/renderImages/SingleImage/SingleImage.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Modals/ImageModal/UserAlbum/renderImages/SingleImage/SingleImage.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Modals/Modals.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Modals/Modals.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Side-Menu/assets/BRAME-logo-small.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Template/Brame/Components/brame-entice/assets/prize1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Template/Brame/Components/brame-entice/assets/prize2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Template/Brame/Components/brame-entice/assets/prize3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/TemplateWrapper/assets/BRAME logo template.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/TemplateWrapper/assets/BRAME logo.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Components/Button-Components/Button.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Components/Button-Components/Button.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Components/Entice-Conditional-Component/EnticeConditionalComponent.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Components/Entice-Conditional-Component/EnticeConditionalComponent.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Components/FontAwesome-Icon-Component/Icon.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Components/FontAwesome-Icon-Component/Icon.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Components/Image-Component/Image.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Components/Image-Component/Image.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Components/ImageBanner-Component/ImageBanner.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Components/ImageBanner-Component/ImageBanner.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Components/ImageBanner-Component/ImageBanner.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Components/ImageBanner-Component/ImageBanner.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Components/Info-Conditional-Component/InfoConditionalComponent.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Components/Info-Conditional-Component/InfoConditionalComponent.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Components/InputField-Components/ChangeImage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Components/InputField-Components/ChangeImage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Components/InputField-Components/InputField.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Components/InputField-Components/InputField.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Components/InputField-Components/InputField.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Components/InputField-Components/InputField.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Components/InputField-Components/TextAreaField.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Components/InputField-Components/TextAreaField.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Components/Navigation-Components/NavigationLink.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Components/Navigation-Components/NavigationLink.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Components/Text&amp;Slideshow-Component/Card.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Components/Text&amp;Slideshow-Component/Card.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Components/Text&amp;Slideshow-Component/CardTitle.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Components/Text&amp;Slideshow-Component/CardTitle.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Components/Text&amp;Slideshow-Component/TextSlideshow.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Components/Text&amp;Slideshow-Component/TextSlideshow.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Components/Text-Components/Description.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Components/Text-Components/Description.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Components/Text-Components/MainTitle.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Components/Text-Components/MainTitle.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Components/Text-Components/SecondaryTitle.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Components/Text-Components/SecondaryTitle.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Edit-Menu/EditForm-Button/EditFormButton.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Edit-Menu/EditForm-Button/EditFormButton.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Edit-Menu/EditForm-Button/EditFormButton.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Edit-Menu/EditForm-Button/EditFormButton.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Edit-Menu/EditForm-Text/EditFormText.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Edit-Menu/EditForm-Text/EditFormText.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Edit-Menu/EditMenu.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Edit-Menu/EditMenu.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Edit-Menu/ImagePicker/ImagePicker.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Edit-Menu/ImagePicker/ImagePicker.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Components/InputField-Components/Upload.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Edit-Menu/Section-Connect/SectionConnect.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Edit-Menu/Section-Connect/SectionConnect.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Edit-Menu/Section-Connect/SectionConnect.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Edit-Menu/Section-Connect/SectionConnect.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Edit-Menu/Section-Engage/SectionEngage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Edit-Menu/Section-Engage/SectionEngage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Edit-Menu/Section-Engage/SectionEngage.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Edit-Menu/Section-Engage/SectionEngage.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Edit-Menu/Section-Entice/SectionEntice.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Edit-Menu/Section-Entice/SectionEntice.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Edit-Menu/Section-Entice/SectionEntice.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Edit-Menu/Section-Entice/SectionEntice.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Edit-Menu/Section-Inform/SectionInform.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Edit-Menu/Section-Inform/SectionInform.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Edit-Menu/Section-Inform/SectionInform.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Edit-Menu/Section-Inform/SectionInform.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Edit-Menu/Section-Introduce/SectionIntroduce.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Edit-Menu/Section-Introduce/SectionIntroduce.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Edit-Menu/Section-Introduce/SectionIntroduce.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Edit-Menu/Section-Introduce/SectionIntroduce.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Edit-Menu/StartNavigation/StartNavigation.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Edit-Menu/StartNavigation/StartNavigation.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Edit-Menu/Text&amp;Slideshow/Text&amp;Slideshow.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Edit-Menu/Text&amp;Slideshow/Text&amp;Slideshow.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Side-Menu/SideMenu.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Side-Menu/SideMenu.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Side-Menu/SideMenu.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Side-Menu/SideMenu.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Template/Brame/Brame.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Template/Brame/Brame.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Template/Brame/Components/brame-connect/brame-connect.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Template/Brame/Components/brame-connect/brame-connect.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Template/Brame/Components/brame-connect/brame-connect.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Template/Brame/Components/brame-connect/brame-connect.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Template/Brame/Components/brame-engage/brame-engage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Template/Brame/Components/brame-engage/brame-engage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Template/Brame/Components/brame-entice/brame-entice.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Template/Brame/Components/brame-entice/brame-entice.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Template/Brame/Components/brame-entice/brame-entice.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Template/Brame/Components/brame-entice/brame-entice.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Template/Brame/Components/brame-footer/brame-footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Template/Brame/Components/brame-footer/brame-footer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Template/Brame/Components/brame-footer/brame-footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Template/Brame/Components/brame-footer/brame-footer.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Template/Brame/Components/brame-info/brame-info.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Template/Brame/Components/brame-info/brame-info.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Template/Brame/Components/brame-info/brame-info.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Template/Brame/Components/brame-info/brame-info.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Template/Brame/Components/brame-introduce/assets/introduce-bg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Template/Brame/Components/brame-introduce/assets/introduce-bg.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Template/Brame/Components/brame-introduce/brame-introduce.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Template/Brame/Components/brame-introduce/brame-introduce.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Template/Brame/Components/brame-introduce/brame-introduce.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Template/Brame/Components/brame-introduce/brame-introduce.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Template/Template-Context/TemplateContext.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Template/Template-Context/TemplateContext.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Template/Template-Context/TemplateTypes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Template/Template-Context/TemplateTypes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Template/Template-Context/TemplatesReducers.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Template/Template-Context/TemplatesReducers.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/TemplateEdit.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/TemplateEdit.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/TemplateEdit.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/TemplateEdit.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/TemplateWrapper/TemplateWrapper.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/TemplateWrapper/TemplateWrapper.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/TemplateWrapper/TemplateWrapper.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Live-Edit/Template-Edit/TemplateWrapper/TemplateWrapper.scss" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/node_modules/" />
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Live-Edit/Template-Edit/Side-Menu/SideMenu.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="e#0#40#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/appConstants.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="84">
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Live-Edit/Template-Edit/Edit-Menu/EditMenu.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="42">
+              <caret line="2" column="72" selection-start-line="2" selection-start-column="72" selection-end-line="2" selection-end-column="72" />
+              <folding>
+                <element signature="e#0#40#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/services/http/_http.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="44" column="1" selection-start-line="44" selection-start-column="1" selection-end-line="44" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-297">
+              <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>gra</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/constants.jsx" />
+        <option value="$PROJECT_DIR$/src/constants.js" />
+        <option value="$PROJECT_DIR$/src/Live-Edit/Template-Edit/Edit-Menu/EditMenu.jsx" />
+        <option value="$PROJECT_DIR$/src/services/http/_http.jsx" />
+        <option value="$PROJECT_DIR$/package.json" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/x-cube-editor.iml" />
+        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+        <option value="$PROJECT_DIR$/.idea/misc.xml" />
+        <option value="$PROJECT_DIR$/.idea/modules.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="823" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="x-cube-editor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="x-cube-editor" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="x-cube-editor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="x-cube-editor" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="690183d7-86b5-46f0-a828-c05e0e2f1661" name="Default Changelist" comment="" />
+      <created>1578994819438</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1578994819438</updated>
+      <workItem from="1578994822013" duration="582000" />
+      <workItem from="1578997303326" duration="84000" />
+      <workItem from="1579603583834" duration="262000" />
+      <workItem from="1579890506070" duration="790000" />
+      <workItem from="1580287458693" duration="35000" />
+      <workItem from="1580376395760" duration="1099000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="2852000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.34460887" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="npm" order="2" side_tool="true" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.33660933" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/Live-Edit/Free-Editor/info" />
+    <entry file="file://$PROJECT_DIR$/src/Live-Edit/Template-Edit/Edit-Menu/Section-Connect/SectionConnect.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-446">
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Live-Edit/Template-Edit/Edit-Menu/StartNavigation/StartNavigation.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1226">
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Live-Edit/Template-Edit/Edit-Menu/Text&amp;Slideshow/Text&amp;Slideshow.jsx">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Live-Edit/Template-Edit/EditModeControler/EditModeControler.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Live-Edit/Template-Edit/Preview-Size/PreviewSize.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="28" column="12" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Live-Edit/Template-Edit/Template/Template-Context/TemplateContext.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15267">
+          <caret line="729" column="1" selection-start-line="729" selection-start-column="1" selection-end-line="729" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Live-Edit/Template-Edit/Side-Menu/SideMenu.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Live-Edit/Template-Edit/Edit-Menu/EditMenu.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Live-Edit/Template-Edit/TemplateEdit.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/appConstants.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Live-Edit/Template-Edit/Edit-Menu/EditMenu.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="72" selection-start-line="2" selection-start-column="72" selection-end-line="2" selection-end-column="72" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/services/http/_http.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="44" column="1" selection-start-line="44" selection-start-column="1" selection-end-line="44" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-297">
+          <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

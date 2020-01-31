@@ -21,6 +21,7 @@ import ImageUploader from './Image-Uploader/ImageUploader'
 
 import './EditMenu.scss'
 export class EditMenu extends Component {
+
   render() {
     let elementToEdit = null;
     //let formTypeControler = null;
